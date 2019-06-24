@@ -1,3 +1,14 @@
+.carousel-wrapper {
+  width: 100%;
+  align-content: center;
+  display: inline-block;
+}
+.carousel-wrapper .tutorial-carousel {
+  width: 60%;
+  height: 200px;
+  margin: auto;
+  border: 2px solid #00c519;
+}
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
