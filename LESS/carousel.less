@@ -11,6 +11,14 @@
     margin: 10px;
     border: 2px solid  @primary-green;
     border-radius: 5px;
+
+    .carousel-items {
+
+    }
+
+    .car-item-hidden {
+      display: none;
+    }
   }
 
   .fa-angle-left {
@@ -22,10 +30,12 @@
     width: 30px;
     height: 30px;
     text-align: center;
+    transition: all .2s;
 
     &:hover {
       background: black;
       color: white;
+      transform: scale(1.15);
     }
   }
 
@@ -38,10 +48,12 @@
     width: 30px;
     height: 30px;
     text-align: center;
+    transition: all .3s;
 
     &:hover {
       background: black;
       color: white;
+      transform: scale(1.15);
     }
   }
 }

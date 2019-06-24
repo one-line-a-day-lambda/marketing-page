@@ -12,6 +12,9 @@
   border: 2px solid #00c519;
   border-radius: 5px;
 }
+.carousel-wrapper .tutorial-carousel .car-item-hidden {
+  display: none;
+}
 .carousel-wrapper .fa-angle-left {
   display: inline-block;
   cursor: pointer;
@@ -21,10 +24,12 @@
   width: 30px;
   height: 30px;
   text-align: center;
+  transition: all 0.2s;
 }
 .carousel-wrapper .fa-angle-left:hover {
   background: black;
   color: white;
+  transform: scale(1.15);
 }
 .carousel-wrapper .fa-angle-right {
   display: inline-block;
@@ -35,10 +40,12 @@
   width: 30px;
   height: 30px;
   text-align: center;
+  transition: all 0.3s;
 }
 .carousel-wrapper .fa-angle-right:hover {
   background: black;
   color: white;
+  transform: scale(1.15);
 }
 @font-face {
   font-family: 'Roboto';
