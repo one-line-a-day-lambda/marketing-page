@@ -6,8 +6,9 @@
 }
 .carousel-wrapper .tutorial-carousel {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: 50%;
   height: 200px;
   margin: 10px;
   border: 2px solid #00c519;
@@ -37,6 +38,7 @@
   height: 30px;
   text-align: center;
   transition: all 0.2s;
+  margin-top: 6%;
 }
 .carousel-wrapper .fa-angle-left:hover {
   color: white;
@@ -55,6 +57,7 @@
   height: 30px;
   text-align: center;
   transition: all 0.3s;
+  margin-top: 6%;
 }
 .carousel-wrapper .fa-angle-right:hover {
   color: white;
