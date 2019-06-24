@@ -5,12 +5,22 @@
   justify-content: center;
 }
 .carousel-wrapper .tutorial-carousel {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 60%;
   height: 200px;
   margin: 10px;
   border: 2px solid #00c519;
   border-radius: 5px;
+  background: #f0fff0;
+}
+.carousel-wrapper .tutorial-carousel .carousel-items {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  background: white;
+  border: 1px solid #62c46f;
+  box-shadow: 1px 1px 3px 0 grey;
 }
 .carousel-wrapper .tutorial-carousel .car-item-hidden {
   display: none;
@@ -19,7 +29,9 @@
   display: inline-block;
   cursor: pointer;
   font-size: 3rem;
-  border: 3px solid black;
+  border: 3px solid #00c519;
+  background: #ccf5cc;
+  color: #00c519;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -27,15 +39,17 @@
   transition: all 0.2s;
 }
 .carousel-wrapper .fa-angle-left:hover {
-  background: black;
   color: white;
-  transform: scale(1.15);
+  background: #008010;
+  border: 3px solid #008010;
 }
 .carousel-wrapper .fa-angle-right {
   display: inline-block;
   cursor: pointer;
   font-size: 3rem;
-  border: 3px solid black;
+  border: 3px solid #00c519;
+  background: #ccf5cc;
+  color: #00c519;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -43,9 +57,9 @@
   transition: all 0.3s;
 }
 .carousel-wrapper .fa-angle-right:hover {
-  background: black;
   color: white;
-  transform: scale(1.15);
+  background: #008010;
+  border: 3px solid #008010;
 }
 @font-face {
   font-family: 'Roboto';

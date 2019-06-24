@@ -5,15 +5,22 @@
   justify-content: center;
 
   .tutorial-carousel {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: 60%;
     height: 200px;
     margin: 10px;
     border: 2px solid  @primary-green;
     border-radius: 5px;
+    background: rgb(240, 255, 240);
 
     .carousel-items {
-
+      width: 80%;
+      height: 90%;
+      margin: auto;
+      background: white;
+      border: 1px solid @light-green;
+      box-shadow: 1px 1px 3px 0 grey;
     }
 
     .car-item-hidden {
@@ -25,7 +32,9 @@
     display: inline-block;
     cursor: pointer;
     font-size: 3rem;
-    border: 3px solid black;
+    border: 3px solid @primary-green;
+    background: rgb(204, 245, 204);
+    color: @primary-green;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -33,9 +42,9 @@
     transition: all .2s;
 
     &:hover {
-      background: black;
       color: white;
-      transform: scale(1.15);
+      background: @dark-green;
+      border: 3px solid @dark-green;
     }
   }
 
@@ -43,7 +52,9 @@
     display: inline-block;
     cursor: pointer;
     font-size: 3rem;
-    border: 3px solid black;
+    border: 3px solid @primary-green;
+    background: rgb(204, 245, 204);
+    color: @primary-green;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -51,9 +62,9 @@
     transition: all .3s;
 
     &:hover {
-      background: black;
       color: white;
-      transform: scale(1.15);
+      background: @dark-green;
+      border: 3px solid @dark-green;
     }
   }
 }
