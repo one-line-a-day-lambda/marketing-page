@@ -7,13 +7,39 @@
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 99;
   
     h1 {
       margin: 0;
-      font-size: 48px;
+      font-size: 4rem;
+    } 
+
+    img {
+        position: absolute;
+        left: 20px;
+        cursor: pointer;
+    }
+  }
+
+  header {
+      position: relative;
+      .text h1{
+          position: absolute;
+          z-index: 2;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          top: 37%;
+          width: 71%;
+          color: white;
+          font-size: 4rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        opacity: 0.8;
     }
   }
