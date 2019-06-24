@@ -76,13 +76,41 @@ header {
 header .text h1 {
   position: absolute;
   z-index: 2;
-  margin: 0 auto;
+  margin: 0 10rem;
   left: 0;
   right: 0;
   top: 37%;
   width: 71%;
   color: white;
   font-size: 4rem;
+}
+header .text p {
+  position: absolute;
+  z-index: 2;
+  margin: 0 10rem;
+  left: 0;
+  right: 0;
+  top: 45%;
+  width: 50%;
+  color: white;
+  font-size: 1.6rem;
+}
+header button {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  left: 35%;
+  top: 90%;
+  width: 30%;
+  color: white;
+  font-size: 1.6rem;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #00c519;
+  border: none;
+  font-family: Roboto;
+  font-weight: 700;
 }
 header img {
   max-width: 100%;
