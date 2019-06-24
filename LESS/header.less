@@ -26,10 +26,11 @@
 
   header {
       position: relative;
-      .text h1{
+      .text {
+      h1{
           position: absolute;
           z-index: 2;
-          margin: 0 auto;
+          margin: 0 10rem;
           left: 0;
           right: 0;
           top: 37%;
@@ -37,6 +38,37 @@
           color: white;
           font-size: 4rem;
       }
+      p {
+        position: absolute;
+          z-index: 2;
+          margin: 0 10rem;
+          left: 0;
+          right: 0;
+          top: 45%;
+          width: 50%;
+          color: white;
+          font-size: 1.6rem;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      position: absolute;
+      z-index: 2;
+      margin: 0;
+      left: 35%;
+      top: 90%;
+      width: 30%;
+      color: white;
+      font-size: 1.6rem;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: @primary-green;
+      border: none;
+      font-family: Roboto;
+      font-weight: 700;
+    }
+
       img {
         max-width: 100%;
         height: auto;
