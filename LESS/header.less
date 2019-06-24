@@ -11,17 +11,48 @@
     position: fixed;
     top: 0;
     z-index: 99;
-  
+
+    .menu {
+      position: absolute;
+      left: 20px;
+      .menu-button {
+        cursor: pointer;
+      }
+      .menu-content{
+        width: 200px;
+        left: -20px;
+        top: 41px;
+        transition: 1s;
+        position: absolute;
+        background-color: @light-green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        margin-top: 20px;
+        border: 2.5px solid @light-green;
+        .dropdown-link {
+          width: 100%;
+          text-align: center;
+          padding: 15px 0;
+          font-size: 18px;
+          text-decoration: none;
+          font-family: Roboto;
+          color: white;
+          &:hover {
+            color: white;
+            background-color: @dark-green;
+          }
+        }
+    }
+    .menu-hidden {
+      left: -240px;
+      transition: 1s;
+    }
+   }
     h1 {
       margin: 0;
       font-size: 4rem;
     } 
-
-    img {
-        position: absolute;
-        left: 20px;
-        cursor: pointer;
-    }
   }
 
   header {
