@@ -37,16 +37,46 @@
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 99;
 }
 .top-bar h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 4rem;
+}
+.top-bar img {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+header {
+  position: relative;
+}
+header .text h1 {
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 37%;
+  width: 71%;
+  color: white;
+  font-size: 4rem;
+}
+header img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+html {
+  font-size: 62.5%;
 }
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
-  background-color: #fffef7;
+  background-color: white;
+}
+.container {
+  max-width: 1400px;
 }
