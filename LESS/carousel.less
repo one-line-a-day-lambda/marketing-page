@@ -24,7 +24,7 @@
       border-radius: 10px;
       box-shadow: 3px 3px 3px 0 lightgrey;
       margin-top: 10px;
-      background: rgb(237, 255, 237);
+      background: @very-light-green;
     }
 
     h2 {
@@ -88,7 +88,7 @@
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 3px 3px 3px 0 lightgrey;
-      border: 3px solid rgb(225, 255, 227);
+      border: 3px solid rgb(232, 255, 234);
 
       .carousel-track {
         position: relative;
@@ -104,7 +104,7 @@
           margin: auto;
           width: 400px;
           height: 100%;
-          background: rgb(237, 255, 237);;
+          background: @very-light-green;
           border-right: 1px solid grey;
 
           .slide {
@@ -112,10 +112,11 @@
           }
         }
       }
-    }
+    } // carousel-track-container
   } // carousel
 } // carousel-wrapper
 
+// nav underneath the carousel
 .carousel-nav {
   display: flex;
   justify-content: center;
