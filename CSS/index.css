@@ -239,6 +239,10 @@ header button {
   transition: all 0.2s;
   outline: none;
 }
+header button a {
+  text-decoration: none;
+  color: white;
+}
 header button:hover {
   transform: scale(1.05);
 }
@@ -250,7 +254,11 @@ header img {
 .accordion-wrapper {
   width: 100%;
   min-height: 400px;
+<<<<<<< HEAD
+  background-image: linear-gradient(270deg, #ffffff 0%, #e6ffe3 100%);
+=======
   padding: 50px 0;
+>>>>>>> 80fc9ee2ffa02e5fbd80d96dbcf28fc936ecd8e8
   margin-top: -20px;
   background: white;
 }
