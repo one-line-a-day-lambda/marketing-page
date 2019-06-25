@@ -227,11 +227,23 @@ header img {
 }
 .accordion-wrapper {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  background-image: linear-gradient(270deg, #ffffff 0%, #e6ffe3 100%);
+  margin-top: -20px;
+}
+.accordion-wrapper h2 {
+  font-size: 2rem;
+  text-align: center;
+  width: 40%;
+  border-bottom: 1px solid lightgrey;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .accordion-wrapper .accordion {
-  width: 70%;
+  width: 700px;
   margin: auto;
+  margin-top: 30px;
 }
 .accordion-wrapper .accordion a {
   position: relative;
@@ -243,7 +255,7 @@ header img {
   width: 100%;
   padding: 1rem 3rem 1rem 1rem;
   color: #92e492;
-  font-size: 1.15rem;
+  font-size: 1.7rem;
   font-weight: 400;
   border-bottom: 1px solid #2ea00b;
 }
@@ -255,19 +267,17 @@ header img {
 .accordion-wrapper .accordion a:hover::after {
   border: 1px solid #0ac729;
 }
-.accordion-wrapper .accordion a::after {
-  font-family: 'Ionicons';
-  content: "\f218";
-  position: absolute;
+.accordion-wrapper .fa-plus {
   float: right;
   right: 1rem;
+  position: absolute;
   font-size: 1rem;
-  color: #7288a2;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
+  color: #58d33f;
+  padding: 6px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  border: 1px solid #7288a2;
+  border: 1px solid #7da272;
   text-align: center;
 }
 .accordion-wrapper .content {
@@ -282,7 +292,7 @@ header img {
   transition: all 0.2s ease 0.15s;
 }
 .accordion-wrapper .content p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 .accordion-wrapper .active {
@@ -291,15 +301,13 @@ header img {
   max-height: 100%;
   -webkit-transition: all 0.35s ease 0.15s;
   -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.2s;
 }
 .accordion-wrapper .active {
   color: #03d20d;
   border-bottom: 1px solid #0ad203;
 }
 .accordion-wrapper .active::after {
-  font-family: 'Ionicons';
-  content: '\f209';
   color: #03d21f;
   border: 1px solid #03d214;
 }
