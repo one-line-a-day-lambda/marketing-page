@@ -42,19 +42,23 @@
   height: 400px;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
+  position: relative;
   width: 100%;
   height: 100%;
   margin: 0;
   padding-inline-start: 0px;
   list-style: none;
+  transition: transform 0.35s ease-in-out;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide {
   position: absolute;
   margin: auto;
-  width: 480px;
+  width: 500px;
   height: 400px;
+  background: #e2e2e2;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide .slide {
   height: 100%;
