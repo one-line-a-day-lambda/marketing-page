@@ -5,20 +5,25 @@
   display: flex;
   justify-content: center;
   background-color: #ffffff;
-  background-image: linear-gradient(180deg, #ffffff 0%, #d5ffd0 100%);
+  background-image: linear-gradient(90deg, #ffffff 0%, #e6ffe3 100%);
   
-  
+  .carousel-title {
+    width: 45%;
+    height: 90%;
+    margin-top: 10px;
+  }
 
   .tutorial-carousel {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 45%;
     height: 90%;
     margin-top: 10px;
     border: 2px solid  @primary-green;
     border-radius: 5px;
     background: rgb(240, 255, 240);
+    box-shadow: 3px 3px 3px 0px grey;
 
     h2 { // carousel "how-to" text
       text-align: center;
@@ -30,8 +35,6 @@
       margin: auto;
       margin-bottom: 10px;
       background: white;
-      border: 1px solid @light-green;
-      box-shadow: 1px 1px 3px 0 grey;
     }
 
     .car-item-hidden {
