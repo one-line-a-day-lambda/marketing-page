@@ -5,31 +5,45 @@
   display: flex;
   justify-content: center;
   background: white;
-  margin-bottom: 20px;
-  padding: 40px;
+  padding: 50px 0;
 }
-.carousel-wrapper .carousel-title {
+.carousel-wrapper .tutorial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 45%;
   height: 90%;
   margin-top: 10px;
+  padding-left: 5%;
 }
-.carousel-wrapper .carousel-title h2 {
+.carousel-wrapper .tutorial-content .tut-bubble {
+  width: 70%;
+  height: 20%;
+  border: 3px solid #e1ffe3;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 0 lightgrey;
+  margin-top: 10px;
+  background: #edffed;
+}
+.carousel-wrapper .tutorial-content h2 {
   text-align: center;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  top: 0;
   font-size: 3rem;
   border-bottom: 1px solid lightgrey;
-  width: 60%;
+  width: 40%;
 }
 .carousel-wrapper .carousel {
   background: white;
   position: relative;
-  width: 500px;
-  height: 90%;
+  width: 400px;
+  height: 400px;
   margin: auto;
-  box-shadow: 3px 3px 3px 0px grey;
+  margin-top: 80px;
   padding: 50px;
 }
 .carousel-wrapper .carousel .carousel-button {
@@ -67,6 +81,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 3px 3px 3px 0 lightgrey;
+  border: 3px solid #e1ffe3;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
   position: relative;
@@ -80,9 +96,9 @@
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide {
   position: absolute;
   margin: auto;
-  width: 500px;
+  width: 400px;
   height: 100%;
-  background: #b8f5b8;
+  background: #edffed;
   border-right: 1px solid grey;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide .slide {
@@ -98,7 +114,7 @@
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.15);
   margin: 0 30px;
   outline: none;
   cursor: pointer;
@@ -220,6 +236,7 @@ header button {
   font-family: Roboto;
   font-weight: 700;
   transition: all 0.2s;
+  outline: none;
 }
 header button:hover {
   transform: scale(1.05);
@@ -232,7 +249,7 @@ header img {
 .accordion-wrapper {
   width: 100%;
   min-height: 400px;
-  padding: 20px;
+  padding: 50px 0;
   margin-top: -20px;
   background: white;
 }
@@ -257,22 +274,21 @@ header img {
   -webkit-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  padding: 1rem 3rem 1rem 1rem;
+  padding: 1rem 0 1rem 1rem;
   font-size: 1.8rem;
   font-weight: 400;
-  border-bottom: 1px solid #62c46f;
+  border-bottom: 1px solid grey;
+  transition: all 0.2s;
 }
 .accordion-wrapper .accordion a:hover,
 .accordion-wrapper .accordion a::after {
   cursor: pointer;
-  color: #6ad46a;
-}
-.accordion-wrapper .accordion a:hover::after {
-  border: 1px solid #0ac729;
+  color: black;
+  background: #e4e4e4;
 }
 .accordion-wrapper i {
   position: absolute;
-  float: left;
+  float: right;
   font-size: 1rem;
   color: #58d33f;
   padding: 6px;
@@ -301,9 +317,6 @@ header img {
   -webkit-transition: all 0.35s ease 0.15s;
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.2s;
-}
-.accordion-wrapper .active {
-  color: #03d20d;
 }
 .accordion-wrapper .active::after {
   color: #03d21f;

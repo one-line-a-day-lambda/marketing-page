@@ -5,33 +5,48 @@
   display: flex;
   justify-content: center;
   background: white;
-  margin-bottom: 20px;
-  padding: 40px;
+  padding: 50px 0;
   
-  .carousel-title {
+  .tutorial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 45%;
     height: 90%;
     margin-top: 10px;
+    padding-left: 5%;
+
+    .tut-bubble {
+      width: 70%;
+      height: 20%;
+      border: 3px solid rgb(225, 255, 227);
+      border-radius: 10px;
+      box-shadow: 3px 3px 3px 0 lightgrey;
+      margin-top: 10px;
+      background: rgb(237, 255, 237);
+    }
 
     h2 {
       text-align: center;
       margin: auto;
       margin-top: 50px;
       margin-bottom: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
+      top: 0;
       font-size: 3rem;
       border-bottom: 1px solid lightgrey;
-      width: 60%;
+      width: 40%;
     }
   }
 
   .carousel {
     background: white;
     position: relative;
-    width: 500px;
-    height: 90%;
+    width: 400px;
+    height: 400px;
     margin: auto;
-    box-shadow: 3px 3px 3px 0px grey;
+    margin-top: 80px;
     padding: 50px;
 
     .carousel-button {
@@ -72,6 +87,8 @@
       position: relative;
       overflow: hidden;
       border-radius: 10px;
+      box-shadow: 3px 3px 3px 0 lightgrey;
+      border: 3px solid rgb(225, 255, 227);
 
       .carousel-track {
         position: relative;
@@ -85,9 +102,9 @@
         .carousel-slide {
           position: absolute;
           margin: auto;
-          width: 500px;
+          width: 400px;
           height: 100%;
-          background: rgb(184, 245, 184);
+          background: rgb(237, 255, 237);;
           border-right: 1px solid grey;
 
           .slide {
@@ -109,7 +126,7 @@
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .15);
     margin: 0 30px;
     outline: none;
     cursor: pointer;

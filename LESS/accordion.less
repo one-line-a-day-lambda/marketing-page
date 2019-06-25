@@ -1,7 +1,7 @@
 .accordion-wrapper{
   width: 100%;
   min-height: 400px;
-  padding: 20px;
+  padding: 50px 0;
   margin-top: -20px;
   background: white;
 
@@ -28,23 +28,25 @@
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 100%;
-    padding: 1rem 3rem 1rem 1rem;
+    padding: 1rem 0 1rem 1rem;
     font-size: 1.8rem;
     font-weight: 400;
-    border-bottom: 1px solid @light-green;
+    border-bottom: 1px solid grey;
+    transition: all .2s;
 
     &:hover, &::after {
       cursor: pointer;
-      color: #6ad46a;
+      color: black;
+      background: rgb(228, 228, 228);
     }
     &:hover::after {
-      border: 1px solid #0ac729;
+
     }
   } // .accordion a
 
   i { // plus/minus icons
     position: absolute;
-    float: left;
+    float: right;
     font-size: 1rem;
     color: #58d33f;
     padding: 6px;
@@ -78,7 +80,7 @@
   }
 
   .active {
-    color: #03d20d;
+    
 
     &::after {
       color: #03d21f;
