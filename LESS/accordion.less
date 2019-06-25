@@ -1,6 +1,7 @@
 .accordion-wrapper{
   width: 100%;
-  height: 400px;
+  min-height: 400px;
+  padding: 20px;
   background-image: linear-gradient(270deg, #ffffff 0%, #e6ffe3 100%);
   margin-top: -20px;
 
@@ -15,9 +16,8 @@
   }
 
   .accordion {
-    width: 700px;
-    margin: auto;
-    margin-top: 30px;
+    width: 50%;
+    margin: 30px auto;
   }
 
   .accordion a {
@@ -30,7 +30,7 @@
     width: 100%;
     padding: 1rem 3rem 1rem 1rem;
     color: #92e492;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 400;
     border-bottom: 1px solid #2ea00b;
 
@@ -42,18 +42,15 @@
       border: 1px solid #0ac729;
     }
   } // .accordion a
-  .fa-plus {
+
+  i { // plus/minus icons
     position: absolute;
-    float: right;
-    right: 1rem;
-    position: absolute;
+    float: left;
     font-size: 1rem;
     color: #58d33f;
     padding: 6px;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    border: 1px solid #7da272;
     text-align: center;
   }
 
@@ -61,12 +58,11 @@
     opacity: 0;
     padding: 0 1rem;
     max-height: 0;
-    border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
     clear: both;
-    -webkit-transition: all 0.2s ease 0.15s;
-    -o-transition: all 0.2s ease 0.15s;
-    transition: all 0.2s ease 0.15s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 
       p {
         font-size: 1.3rem;
@@ -84,7 +80,6 @@
 
   .active {
     color: #03d20d;
-    border-bottom: 1px solid #0ad203;
 
     &::after {
       color: #03d21f;

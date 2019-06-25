@@ -16,6 +16,8 @@
   text-align: center;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   font-size: 3rem;
   border-bottom: 1px solid lightgrey;
   width: 60%;
@@ -122,7 +124,8 @@
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
 .top-bar {
-  width: 100%;
+  width: 100vw;
+  left: 0;
   height: 75px;
   background-color: #00c519;
   color: white;
@@ -186,7 +189,8 @@ header .text h1 {
   top: 37%;
   width: 71%;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
+  text-decoration: underline;
 }
 header .text p {
   position: absolute;
@@ -224,10 +228,10 @@ header img {
   height: auto;
   opacity: 0.8;
 }
-
 .accordion-wrapper {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
+  padding: 20px;
   background-image: linear-gradient(270deg, #ffffff 0%, #e6ffe3 100%);
   margin-top: -20px;
 }
@@ -241,9 +245,8 @@ header img {
   padding-bottom: 10px;
 }
 .accordion-wrapper .accordion {
-  width: 700px;
-  margin: auto;
-  margin-top: 30px;
+  width: 50%;
+  margin: 30px auto;
 }
 .accordion-wrapper .accordion a {
   position: relative;
@@ -255,7 +258,7 @@ header img {
   width: 100%;
   padding: 1rem 3rem 1rem 1rem;
   color: #92e492;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 400;
   border-bottom: 1px solid #2ea00b;
 }
@@ -267,29 +270,25 @@ header img {
 .accordion-wrapper .accordion a:hover::after {
   border: 1px solid #0ac729;
 }
-.accordion-wrapper .fa-plus {
-  float: right;
-  right: 1rem;
+.accordion-wrapper i {
   position: absolute;
+  float: left;
   font-size: 1rem;
   color: #58d33f;
   padding: 6px;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  border: 1px solid #7da272;
   text-align: center;
 }
 .accordion-wrapper .content {
   opacity: 0;
   padding: 0 1rem;
   max-height: 0;
-  border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   clear: both;
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .accordion-wrapper .content p {
   font-size: 1.3rem;
@@ -305,13 +304,11 @@ header img {
 }
 .accordion-wrapper .active {
   color: #03d20d;
-  border-bottom: 1px solid #0ad203;
 }
 .accordion-wrapper .active::after {
   color: #03d21f;
   border: 1px solid #03d214;
 }
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -375,4 +372,5 @@ body {
 .container {
   max-width: 1400px;
   background: #ededed;
+  margin: 0 auto;
 }
