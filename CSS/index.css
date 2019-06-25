@@ -1,24 +1,31 @@
 .carousel-wrapper {
   width: 100%;
+  height: 500px;
   align-content: center;
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 0%, #d5ffd0 100%);
 }
 .carousel-wrapper .tutorial-carousel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  height: 200px;
-  margin: 10px;
+  height: 90%;
+  margin-top: 10px;
   border: 2px solid #00c519;
   border-radius: 5px;
   background: #f0fff0;
+}
+.carousel-wrapper .tutorial-carousel h2 {
+  text-align: center;
 }
 .carousel-wrapper .tutorial-carousel .carousel-items {
   width: 80%;
   height: 90%;
   margin: auto;
+  margin-bottom: 10px;
   background: white;
   border: 1px solid #62c46f;
   box-shadow: 1px 1px 3px 0 grey;
@@ -38,7 +45,8 @@
   height: 30px;
   text-align: center;
   transition: all 0.2s;
-  margin-top: 6%;
+  margin: auto;
+  margin-right: 0.5%;
 }
 .carousel-wrapper .fa-angle-left:hover {
   color: white;
@@ -57,7 +65,8 @@
   height: 30px;
   text-align: center;
   transition: all 0.3s;
-  margin-top: 6%;
+  margin: auto;
+  margin-left: 0.5%;
 }
 .carousel-wrapper .fa-angle-right:hover {
   color: white;
