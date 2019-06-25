@@ -14,6 +14,11 @@
 }
 .carousel-wrapper .carousel-title h2 {
   text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 3rem;
+  border-bottom: 1px solid lightgrey;
+  width: 60%;
 }
 .carousel-wrapper .carousel {
   background: white;
@@ -29,15 +34,16 @@
   top: 50%;
   background: transparent;
   border: 0;
-  margin: auto;
   transition: all 0.2s;
-  padding: 10px;
   border-radius: 50%;
   cursor: pointer;
 }
 .carousel-wrapper .carousel .carousel-button:hover {
   transform: scale(1.2);
   background: #b5ffb5;
+}
+.carousel-wrapper .carousel .carousel-button:focus {
+  outline: none;
 }
 .carousel-wrapper .carousel .carousel-button i {
   font-size: 3rem;
@@ -57,6 +63,7 @@
   margin: auto;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
   position: relative;
@@ -81,7 +88,7 @@
 .carousel-nav {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  padding: 20px 0 0 0;
 }
 .carousel-nav .carousel-indicator {
   border: 0;
@@ -89,11 +96,12 @@
   width: 10px;
   height: 10px;
   background: rgba(0, 0, 0, 0.3);
-  margin: 0 15px;
+  margin: 0 30px;
+  outline: none;
   cursor: pointer;
 }
 .carousel-nav .current-slide {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(25, 148, 0, 0.8);
 }
 @font-face {
   font-family: 'Roboto';
@@ -216,6 +224,54 @@ header img {
   max-width: 100%;
   height: auto;
   opacity: 0.8;
+}
+.accordion-wrapper {
+  width: 100%;
+  height: 500px;
+}
+.accordion-wrapper .accordion {
+  width: 70%;
+  margin: auto;
+}
+.accordion-wrapper .accordion a {
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #92e492;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #2ea00b;
+}
+.accordion-wrapper .accordion a:hover,
+.accordion-wrapper .accordion a::after {
+  cursor: pointer;
+  color: #6ad46a;
+}
+.accordion-wrapper .accordion a:hover::after {
+  border: 1px solid #0ac729;
+}
+.accordion-wrapper .accordion a::after {
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+.accordion-wrapper .active {
+  color: #03d20d;
+  border-bottom: 1px solid #0ad203;
 }
 html {
   font-size: 62.5%;

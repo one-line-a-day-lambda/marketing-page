@@ -1,0 +1,50 @@
+.accordion-wrapper{
+  width: 100%;
+  height: 500px;
+
+  .accordion {
+    width: 70%;
+    margin: auto;
+  }
+
+  .accordion a {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #92e492;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #2ea00b;
+
+    &:hover, &::after {
+      cursor: pointer;
+      color: #6ad46a;
+    }
+    &:hover::after {
+      border: 1px solid #0ac729;
+    }
+    &::after {
+      content: '\f218';
+      position: absolute;
+      float: right;
+      right: 1rem;
+      font-size: 1rem;
+      color: #7288a2;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #7288a2;
+      text-align: center;
+    }
+  }
+  .active {
+    color: #03d20d;
+    border-bottom: 1px solid #0ad203;
+  }
+}
