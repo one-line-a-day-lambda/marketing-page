@@ -224,7 +224,6 @@ header img {
   height: auto;
   opacity: 0.8;
 }
-
 .accordion-wrapper {
   width: 100%;
   height: 400px;
@@ -311,7 +310,6 @@ header img {
   color: #03d21f;
   border: 1px solid #03d214;
 }
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -358,6 +356,11 @@ header img {
   background-color: #62c46f;
   color: white;
   transform: rotateY(180deg);
+}
+.card-container .flip-card .flip-card-inner .flip-card-back p {
+  text-align: left;
+  padding: 10px;
+  font-size: 1.6rem;
 }
 .card-container .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
