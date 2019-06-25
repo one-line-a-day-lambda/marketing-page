@@ -10,7 +10,9 @@
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 3;
+    max-width: 1400px;
+    width: 100%;
 
     .menu {
       position: absolute;
@@ -57,15 +59,15 @@
 
   header {
       position: relative;
+      width: 100%;
       .text {
+
       h1{
           position: absolute;
           z-index: 2;
-          margin: 0 10rem;
-          left: 0;
-          right: 0;
-          top: 37%;
-          width: 71%;
+          left: 10rem;
+          top: 30%;
+          width: 50%;
           color: white;
           font-size: 4rem;
       }
@@ -75,8 +77,8 @@
           margin: 2rem 10rem;
           left: 0;
           right: 0;
-          top: 45%;
-          width: 50%;
+          top: 50%;
+          width: 60%;
           color: white;
           font-size: 1.6rem;
       }
@@ -91,7 +93,7 @@
       width: 30%;
       color: white;
       font-size: 1.6rem;
-      padding: 15px;
+      padding: 14px;
       border-radius: 5px;
       background-color: @primary-green;
       border: none;
@@ -105,7 +107,7 @@
     }
 
       img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         opacity: 0.8;
     }
