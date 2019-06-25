@@ -266,24 +266,20 @@ header img {
 .accordion-wrapper .accordion a:hover::after {
   border: 1px solid #0ac729;
 }
-.accordion-wrapper .fa-plus {
-  float: right;
-  right: 1rem;
+.accordion-wrapper i {
   position: absolute;
+  float: right;
   font-size: 1rem;
   color: #58d33f;
   padding: 6px;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  border: 1px solid #7da272;
   text-align: center;
 }
 .accordion-wrapper .content {
   opacity: 0;
   padding: 0 1rem;
   max-height: 0;
-  border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   clear: both;
   -webkit-transition: all 0.2s ease 0.15s;
@@ -304,7 +300,6 @@ header img {
 }
 .accordion-wrapper .active {
   color: #03d20d;
-  border-bottom: 1px solid #0ad203;
 }
 .accordion-wrapper .active::after {
   color: #03d21f;
