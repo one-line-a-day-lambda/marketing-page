@@ -7,7 +7,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
         crossorigin="anonymous"></script>
         <script src="./JavaScript/header.js" async></script>
-        <script src="./JavaScript/carousel.js"></script>
+        <script src="./JavaScript/carousel.js" async></script>
         <script src="https://kit.fontawesome.com/319299884b.js"></script>
     </head>
 
@@ -38,16 +38,40 @@
             <img class="background-img" src="./Images/typewriter.jpg" alt="Photo by Patrick Fore on Unsplash">
         </header>
 
-
+        <!-- Carousel section -->
        <div class="carousel-wrapper">
-          <i class="fas fa-angle-left"></i>
-          <div class="tutorial-carousel">
-            <div class="carousel-items">Step 1</div>
-            <div class="carousel-items">Step 2</div>
-            <div class="carousel-items">Step 3</div>
-            <div class="carousel-items">Step 4</div>
+           <div class="carousel-title">
+            <h2>Getting Started</h2>
+           </div>
+
+          
+          <div class="carousel">
+            <button class="carousel-button carousel-button--left is-hidden"><i class="fas fa-angle-left"></i></button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <div class="slide slide-1-content">Slide 1</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class=" slide slide-2-content">Slide 2</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="slide slide-3-content">Slide 3</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="slide slide-3-content">Slide 4</div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button carousel-button--right"><i class="fas fa-angle-right"></i></button>
+
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
           </div>
-          <i class="fas fa-angle-right"></i>
        </div>
 
        <div class = "accordion">
@@ -59,7 +83,8 @@
         </footer>
     </div>
 
-
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </body>
 
 
