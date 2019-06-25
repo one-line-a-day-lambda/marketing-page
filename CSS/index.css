@@ -26,6 +26,10 @@
   margin-top: 10px;
   background: #edffed;
 }
+.carousel-wrapper .tutorial-content .tut-bubble h3 {
+  text-align: center;
+  text-decoration: underline;
+}
 .carousel-wrapper .tutorial-content h2 {
   text-align: center;
   margin: auto;
@@ -112,15 +116,15 @@
 .carousel-nav .carousel-indicator {
   border: 0;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background: rgba(0, 0, 0, 0.15);
-  margin: 0 30px;
+  width: 14px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
   outline: none;
   cursor: pointer;
 }
 .carousel-nav .current-slide {
-  background: rgba(25, 148, 0, 0.8);
+  background: #62c46f;
 }
 @font-face {
   font-family: 'Roboto';
