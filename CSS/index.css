@@ -82,7 +82,7 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0 lightgrey;
-  border: 3px solid #e1ffe3;
+  border: 3px solid #e8ffea;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
   position: relative;
@@ -141,6 +141,7 @@
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
 .top-bar {
+  width: 100%;
   left: 0;
   height: 75px;
   background-color: #00c519;
@@ -151,8 +152,6 @@
   position: fixed;
   top: 0;
   z-index: 3;
-  max-width: 1400px;
-  width: 100%;
 }
 .top-bar .menu {
   position: absolute;

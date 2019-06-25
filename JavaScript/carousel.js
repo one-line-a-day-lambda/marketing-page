@@ -13,25 +13,27 @@ const setSlidePosition = (slide, index) => {
 }
 slides.forEach(setSlidePosition);
 
+// move to the target slide
 const moveToSlide = (track, currentSlide, targetSlide) => {
   track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide');
 }
 
+// update dot indicators
 const updateDots = (currentDot, targetDot) => {
   currentDot.classList.remove('current-slide');
   targetDot.classList.add('current-slide');
 }
 
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
-  if (targetIndex === 0) {
+  if (targetIndex === 0) { // when at the first slide, hide left arrow
     prevButton.classList.add('is-hidden');
     nextButton.classList.remove('is-hidden');
-  } else if (targetIndex === slides.length - 1) {
+  } else if (targetIndex === slides.length - 1) { // when at the last slide, hide right arrow
     prevButton.classList.remove('is-hidden');
     nextButton.classList.add('is-hidden');
-  } else {
+  } else {  // all slides in between
     prevButton.classList.remove('is-hidden');
     nextButton.classList.remove('is-hidden');
   }
