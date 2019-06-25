@@ -29,7 +29,8 @@
       border: 1px solid #0ac729;
     }
     &::after {
-      content: '\f218';
+      font-family: 'Ionicons';
+      content: "\f218";
       position: absolute;
       float: right;
       right: 1rem;
@@ -42,9 +43,42 @@
       border: 1px solid #7288a2;
       text-align: center;
     }
+  } // .accordion a
+
+  .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+      }
   }
+  .active { //active content
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+  }
+
   .active {
     color: #03d20d;
     border-bottom: 1px solid #0ad203;
+
+    &::after {
+      font-family: 'Ionicons';
+      content: '\f209';
+      color: #03d21f;
+      border: 1px solid #03d214;
+    }
   }
 }
