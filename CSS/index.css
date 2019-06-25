@@ -1,6 +1,6 @@
 .carousel-wrapper {
   width: 100%;
-  height: 500px;
+  height: 700px;
   align-content: center;
   display: flex;
   justify-content: center;
@@ -12,70 +12,69 @@
   height: 90%;
   margin-top: 10px;
 }
-.carousel-wrapper .tutorial-carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 45%;
-  height: 90%;
-  margin-top: 10px;
-  border: 2px solid #00c519;
-  border-radius: 5px;
-  background: #f0fff0;
-  box-shadow: 3px 3px 3px 0px grey;
-}
-.carousel-wrapper .tutorial-carousel h2 {
-  text-align: center;
-}
-.carousel-wrapper .tutorial-carousel .carousel-items {
-  width: 80%;
-  height: 90%;
-  margin: auto;
-  margin-bottom: 10px;
+.carousel-wrapper .carousel {
   background: white;
-}
-.carousel-wrapper .tutorial-carousel .car-item-hidden {
-  display: none;
-}
-.carousel-wrapper .fa-angle-left {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 3rem;
-  border: 3px solid #00c519;
-  background: #ccf5cc;
-  color: #00c519;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  transition: all 0.2s;
+  position: relative;
+  width: 500px;
+  height: 500px;
   margin: auto;
-  margin-right: 0.5%;
+  box-shadow: 3px 3px 3px 0px grey;
+  padding: 50px;
 }
-.carousel-wrapper .fa-angle-left:hover {
-  color: white;
-  background: #008010;
-  border: 3px solid #008010;
-}
-.carousel-wrapper .fa-angle-right {
-  display: inline-block;
+.carousel-wrapper .carousel .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
   cursor: pointer;
-  font-size: 3rem;
-  border: 3px solid #00c519;
-  background: #ccf5cc;
-  color: #00c519;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  transition: all 0.3s;
-  margin: auto;
-  margin-left: 0.5%;
 }
-.carousel-wrapper .fa-angle-right:hover {
-  color: white;
-  background: #008010;
-  border: 3px solid #008010;
+.carousel-wrapper .carousel .carousel-button i {
+  font-size: 3rem;
+}
+.carousel-wrapper .carousel .carousel-button--left {
+  margin-left: -25px;
+}
+.carousel-wrapper .carousel .carousel-button--right {
+  right: 25px;
+}
+.carousel-wrapper .carousel .carousel-track-container {
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+.carousel-wrapper .carousel .carousel-track-container .carousel-track {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-inline-start: 0px;
+  list-style: none;
+}
+.carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide {
+  position: absolute;
+  margin: auto;
+  width: 480px;
+  height: 400px;
+}
+.carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide .slide {
+  height: 100%;
+}
+.carousel-nav {
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel-nav .carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+}
+.carousel-nav .current-slide {
+  background: rgba(0, 0, 0, 0.8);
 }
 @font-face {
   font-family: 'Roboto';

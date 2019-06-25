@@ -1,6 +1,6 @@
 .carousel-wrapper {
   width: 100%;
-  height: 500px;
+  height: 700px;
   align-content: center;
   display: flex;
   justify-content: center;
@@ -13,76 +13,76 @@
     margin-top: 10px;
   }
 
-  .tutorial-carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 45%;
-    height: 90%;
-    margin-top: 10px;
-    border: 2px solid  @primary-green;
-    border-radius: 5px;
-    background: rgb(240, 255, 240);
+  .carousel {
+    background: white;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
     box-shadow: 3px 3px 3px 0px grey;
+    padding: 50px;
 
-    h2 { // carousel "how-to" text
-      text-align: center;
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+
+      i {
+        font-size: 3rem;
+      }
+    }
+    .carousel-button--left {
+      margin-left: -25px;
+    }
+    .carousel-button--right {
+      right: 25px;
     }
 
-    .carousel-items {
-      width: 80%;
-      height: 90%;
+    .carousel-track-container {
+      height: 400px;
       margin: auto;
-      margin-bottom: 10px;
-      background: white;
-    }
+      position: relative;
 
-    .car-item-hidden {
-      display: none;
-    }
-  }
+      .carousel-track {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-inline-start: 0px;
+        list-style: none;
 
-  .fa-angle-left {
-    display: inline-block;
-    cursor: pointer;
-    font-size: 3rem;
-    border: 3px solid @primary-green;
-    background: rgb(204, 245, 204);
-    color: @primary-green;
+        .carousel-slide {
+          position: absolute;
+          margin: auto;
+          width: 480px;
+          height: 400px;
+
+          .slide {
+            height: 100%;
+          }
+        }
+      }
+    }
+  } // carousel
+} // carousel-wrapper
+
+.carousel-nav {
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+  .carousel-indicator {
+    border: 0;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    transition: all .2s;
-    margin: auto;
-    margin-right: 0.5%;
-
-    &:hover {
-      color: white;
-      background: @dark-green;
-      border: 3px solid @dark-green;
-    }
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 10px;
   }
-
-  .fa-angle-right {
-    display: inline-block;
-    cursor: pointer;
-    font-size: 3rem;
-    border: 3px solid @primary-green;
-    background: rgb(204, 245, 204);
-    color: @primary-green;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    transition: all .3s;
-    margin: auto;
-    margin-left: 0.5%;
-
-    &:hover {
-      color: white;
-      background: @dark-green;
-      border: 3px solid @dark-green;
-    }
+  .current-slide {
+    background: rgba(0, 0, 0, .80);
   }
 }
