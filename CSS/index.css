@@ -1,11 +1,12 @@
 .carousel-wrapper {
   width: 100%;
-  height: 700px;
+  height: 600px;
   align-content: center;
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, #ffffff 0%, #e6ffe3 100%);
+  background: white;
+  margin-bottom: 20px;
+  padding: 40px;
 }
 .carousel-wrapper .carousel-title {
   width: 45%;
@@ -26,7 +27,7 @@
   background: white;
   position: relative;
   width: 500px;
-  height: 500px;
+  height: 90%;
   margin: auto;
   box-shadow: 3px 3px 3px 0px grey;
   padding: 50px;
@@ -61,7 +62,7 @@
   display: none;
 }
 .carousel-wrapper .carousel .carousel-track-container {
-  height: 500px;
+  height: 100%;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -232,8 +233,8 @@ header img {
   width: 100%;
   min-height: 400px;
   padding: 20px;
-  background-image: linear-gradient(270deg, #ffffff 0%, #e6ffe3 100%);
   margin-top: -20px;
+  background: white;
 }
 .accordion-wrapper h2 {
   font-size: 2rem;
@@ -257,10 +258,9 @@ header img {
   flex-direction: column;
   width: 100%;
   padding: 1rem 3rem 1rem 1rem;
-  color: #92e492;
   font-size: 1.8rem;
   font-weight: 400;
-  border-bottom: 1px solid #2ea00b;
+  border-bottom: 1px solid #62c46f;
 }
 .accordion-wrapper .accordion a:hover,
 .accordion-wrapper .accordion a::after {
