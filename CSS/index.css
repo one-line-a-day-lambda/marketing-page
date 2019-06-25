@@ -134,7 +134,9 @@
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 3;
+  max-width: 1400px;
+  width: 100%;
 }
 .top-bar .menu {
   position: absolute;
@@ -179,15 +181,14 @@
 }
 header {
   position: relative;
+  width: 100%;
 }
 header .text h1 {
   position: absolute;
   z-index: 2;
-  margin: 0 10rem;
-  left: 0;
-  right: 0;
-  top: 37%;
-  width: 71%;
+  left: 10rem;
+  top: 30%;
+  width: 50%;
   color: white;
   font-size: 3rem;
   text-decoration: underline;
@@ -198,8 +199,8 @@ header .text p {
   margin: 2rem 10rem;
   left: 0;
   right: 0;
-  top: 45%;
-  width: 50%;
+  top: 50%;
+  width: 60%;
   color: white;
   font-size: 1.6rem;
 }
@@ -212,7 +213,7 @@ header button {
   width: 30%;
   color: white;
   font-size: 1.6rem;
-  padding: 15px;
+  padding: 14px;
   border-radius: 5px;
   background-color: #00c519;
   border: none;
@@ -224,7 +225,7 @@ header button:hover {
   transform: scale(1.05);
 }
 header img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   opacity: 0.8;
 }
@@ -356,6 +357,11 @@ header img {
   color: white;
   transform: rotateY(180deg);
 }
+.card-container .flip-card .flip-card-inner .flip-card-back p {
+  text-align: left;
+  padding: 10px;
+  font-size: 1.6rem;
+}
 .card-container .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -367,10 +373,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
-  background-color: white;
+  background-color: #ededed;
+}
+body {
+  max-width: 1400px;
+  width: 100%;
 }
 .container {
-  max-width: 1400px;
+  width: 100%;
   background: #ededed;
   margin: 0 auto;
+}
+footer p {
+  text-align: center;
 }
