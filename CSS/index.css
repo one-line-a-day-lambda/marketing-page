@@ -12,6 +12,9 @@
   height: 90%;
   margin-top: 10px;
 }
+.carousel-wrapper .carousel-title h2 {
+  text-align: center;
+}
 .carousel-wrapper .carousel {
   background: white;
   position: relative;
@@ -24,25 +27,33 @@
 .carousel-wrapper .carousel .carousel-button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   background: transparent;
   border: 0;
+  margin: auto;
+  transition: all 0.2s;
+  padding: 10px;
+  border-radius: 50%;
   cursor: pointer;
+}
+.carousel-wrapper .carousel .carousel-button:hover {
+  transform: scale(1.2);
+  background: #b5ffb5;
 }
 .carousel-wrapper .carousel .carousel-button i {
   font-size: 3rem;
+  color: #008010;
 }
 .carousel-wrapper .carousel .carousel-button--left {
-  margin-left: -25px;
+  margin-left: -40px;
 }
 .carousel-wrapper .carousel .carousel-button--right {
-  right: 25px;
+  right: 10px;
 }
 .carousel-wrapper .carousel .is-hidden {
   display: none;
 }
 .carousel-wrapper .carousel .carousel-track-container {
-  height: 400px;
+  height: 500px;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -60,8 +71,9 @@
   position: absolute;
   margin: auto;
   width: 500px;
-  height: 400px;
-  background: #e2e2e2;
+  height: 100%;
+  background: #b8f5b8;
+  border-right: 1px solid grey;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide .slide {
   height: 100%;

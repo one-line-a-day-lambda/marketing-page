@@ -11,6 +11,10 @@
     width: 45%;
     height: 90%;
     margin-top: 10px;
+
+    h2 {
+      text-align: center;
+    }
   }
 
   .carousel {
@@ -25,27 +29,36 @@
     .carousel-button {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
       background: transparent;
       border: 0;
+      margin: auto;
+      transition: all .2s;
+      padding: 10px;
+      border-radius: 50%;
       cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+        background: rgb(181, 255, 181);
+      }
 
       i {
         font-size: 3rem;
+        color: @dark-green;
       }
     }
     .carousel-button--left {
-      margin-left: -25px;
+      margin-left: -40px;
     }
     .carousel-button--right {
-      right: 25px;
+      right: 10px;
     }
     .is-hidden {
       display: none;
     }
 
     .carousel-track-container {
-      height: 400px;
+      height: 500px;
       margin: auto;
       position: relative;
       overflow: hidden;
@@ -63,8 +76,9 @@
           position: absolute;
           margin: auto;
           width: 500px;
-          height: 400px;
-          background: rgb(226, 226, 226);
+          height: 100%;
+          background: rgb(184, 245, 184);
+          border-right: 1px solid grey;
 
           .slide {
             height: 100%;
