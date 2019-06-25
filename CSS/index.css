@@ -237,6 +237,10 @@ header button {
   transition: all 0.2s;
   outline: none;
 }
+header button a {
+  text-decoration: none;
+  color: white;
+}
 header button:hover {
   transform: scale(1.05);
 }
