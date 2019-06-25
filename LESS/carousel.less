@@ -14,6 +14,11 @@
 
     h2 {
       text-align: center;
+      margin: auto;
+      margin-top: 50px;
+      font-size: 3rem;
+      border-bottom: 1px solid lightgrey;
+      width: 60%;
     }
   }
 
@@ -31,15 +36,16 @@
       top: 50%;
       background: transparent;
       border: 0;
-      margin: auto;
       transition: all .2s;
-      padding: 10px;
       border-radius: 50%;
       cursor: pointer;
 
       &:hover {
         transform: scale(1.2);
         background: rgb(181, 255, 181);
+      }
+      &:focus {
+        outline: none;
       }
 
       i {
@@ -62,6 +68,7 @@
       margin: auto;
       position: relative;
       overflow: hidden;
+      border-radius: 10px;
 
       .carousel-track {
         position: relative;
@@ -92,7 +99,7 @@
 .carousel-nav {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  padding: 20px 0 0 0;
 
   .carousel-indicator {
     border: 0;
@@ -100,10 +107,11 @@
     width: 10px;
     height: 10px;
     background: rgba(0, 0, 0, .3);
-    margin: 0 15px;
+    margin: 0 30px;
+    outline: none;
     cursor: pointer;
   }
   .current-slide {
-    background: rgba(0, 0, 0, .80);
+    background: rgba(25, 148, 0, 0.8);
   }
 }
