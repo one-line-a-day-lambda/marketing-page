@@ -574,6 +574,23 @@ header img {
 .card-container .flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14px;
+}
+footer p {
+  text-align: center;
+  font-size: 1.6rem;
+}
+footer .social-nav a {
+  text-decoration: none;
+}
+.fab {
+  color: black;
+  padding: 0 14px;
+}
 html {
   font-size: 62.5%;
 }
@@ -592,21 +609,4 @@ body {
 .container {
   width: 100%;
   background: #ededed;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-footer p {
-  text-align: center;
-  font-size: 1.6rem;
-}
-footer .social-nav a {
-  text-decoration: none;
-}
-footer .social-nav a i {
-  color: black;
-  padding: 0 14px;
 }
