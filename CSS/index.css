@@ -26,6 +26,10 @@
   margin-top: 10px;
   background: #edffed;
 }
+.carousel-wrapper .tutorial-content .tut-bubble h3 {
+  text-align: center;
+  text-decoration: underline;
+}
 .carousel-wrapper .tutorial-content h2 {
   text-align: center;
   margin: auto;
@@ -57,14 +61,13 @@
 }
 .carousel-wrapper .carousel .carousel-button:hover {
   transform: scale(1.2);
-  background: #b5ffb5;
 }
 .carousel-wrapper .carousel .carousel-button:focus {
   outline: none;
 }
 .carousel-wrapper .carousel .carousel-button i {
   font-size: 3rem;
-  color: #008010;
+  color: #00c519;
 }
 .carousel-wrapper .carousel .carousel-button--left {
   margin-left: -40px;
@@ -98,11 +101,23 @@
   margin: auto;
   width: 400px;
   height: 100%;
-  background: #edffed;
-  border-right: 1px solid grey;
+  background: #ededed;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide .slide {
   height: 100%;
+}
+.carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide p {
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background: #edffed;
 }
 .carousel-nav {
   display: flex;
@@ -112,15 +127,15 @@
 .carousel-nav .carousel-indicator {
   border: 0;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background: rgba(0, 0, 0, 0.15);
-  margin: 0 30px;
+  width: 14px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
   outline: none;
   cursor: pointer;
 }
 .carousel-nav .current-slide {
-  background: rgba(25, 148, 0, 0.8);
+  background: #62c46f;
 }
 @font-face {
   font-family: 'Roboto';
