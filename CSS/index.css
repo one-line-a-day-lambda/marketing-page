@@ -168,6 +168,7 @@
 @media (max-width: 500px) {
   .carousel-wrapper .carousel .carousel-track-container {
     box-shadow: none;
+    width: 100%;
   }
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
@@ -431,7 +432,7 @@ header .text p {
   header .text p {
     font-size: 1.2rem;
     color: black;
-    width: 93%;
+    width: 94.3%;
     padding: 14px;
     margin: 0;
     position: relative;
@@ -459,6 +460,15 @@ header button {
   outline: none;
 }
 @media (max-width: 500px) {
+  header button {
+    background-color: #0000cc;
+    width: 50%;
+    left: 25%;
+    position: relative;
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 1000px) {
   header button {
     background-color: #0000cc;
     width: 50%;
@@ -686,20 +696,9 @@ header img {
   padding: 10px;
   font-size: 1.6rem;
 }
-.card-container .flip-card:hover .flip-card-inner {
+.card-container .flip-card:hover .flip-card-inner,
+.card-container .flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
-}
-.social-nav {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  width: 40%;
-  margin: 0 auto;
-  height: 50px;
-}
-.social-nav .fab {
-  font-size: 25px;
-  margin: 0 10px;
 }
 html {
   font-size: 62.5%;
@@ -720,7 +719,20 @@ body {
   width: 100%;
   background: #ededed;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 footer p {
   text-align: center;
   font-size: 1.6rem;
+}
+footer .social-nav a {
+  text-decoration: none;
+}
+footer .social-nav a i {
+  color: black;
+  padding: 0 14px;
 }
