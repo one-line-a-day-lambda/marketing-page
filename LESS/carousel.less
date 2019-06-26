@@ -22,6 +22,9 @@
       padding: 0;
       width: 70%;
     }
+    @media @mobile {
+      width: 95%;
+    }
 
     .tut-bubble {
       width: 70%;
@@ -58,7 +61,11 @@
       top: 0;
       font-size: 3rem;
       border-bottom: 1px solid lightgrey;
-      width: 40%;
+      width: 50%;
+
+      @media @tablet {
+        width: 70%;
+      }
     }
   }
 
@@ -81,15 +88,17 @@
       cursor: pointer;
 
       @media @tablet {
-        height: 150px;
-        width: 75px;
-        background: @primary-green;
+        height: 125px;
+        width: 10%;
+        background: @light-green;
         top: 40%;
-        border-radius: 0;
-
-        &:hover {
-          background: @light-green;
-        }
+        border-radius: 5px;
+      }
+      @media @mobile {
+        top: 430px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
       }
       &:focus {
         outline: none;
@@ -97,11 +106,14 @@
 
       i {
         font-size: 3rem;
-        color: @primary-green;
+        color: @light-green;
 
         @media @tablet {
           color: white;
           font-size: 5rem;
+        }
+        @media @mobile {
+          font-size: 3rem;
         }
       }
     }
@@ -111,12 +123,24 @@
       @media @tablet {
         margin-left: -100px;
       }
+      @media (max-width: 700px) {
+        margin-left: -43px;
+      }
+      @media @mobile {
+        left: 70px;
+      }
     }
     .carousel-button--right {
       right: 10px;
 
       @media @tablet {
         right: -50px;
+      }
+      @media (max-width: 700px) {
+        right: -45px;
+      }
+      @media @mobile {
+        right: 20px;
       }
     }
     .is-hidden {
@@ -130,6 +154,11 @@
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 3px 3px 3px 0 lightgrey;
+
+      @media @mobile {
+        box-shadow: none;
+        width: 100%;
+      }
 
       .carousel-track {
         position: relative;
@@ -149,7 +178,7 @@
 
           .slide {
             height: 100%;
-            
+            width: 100%;
           }
           img {
             width: 100%;
@@ -184,13 +213,25 @@
           @media @tablet {
             width: 100%;
           }
-        } // arousel-slide
+        } // carousel-slide
       } // carousel-track
+      @media @mobile {
+        border-radius: 0;
+      }
     } // carousel-track-container
     @media @tablet {
       margin: 10px;
-      width: 500px;
-      height: 500px;
+      width: 400px;
+      height: 400px;
+    }
+    @media (max-width: 700px) {
+      width: 400px;
+      height: 400px;
+      padding: 0;
+      padding-top: 20px;
+    }
+    @media @mobile {
+      margin: 40px 0;
     }
   } // carousel
 

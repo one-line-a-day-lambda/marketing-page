@@ -24,6 +24,11 @@
     width: 70%;
   }
 }
+@media (max-width: 500px) {
+  .carousel-wrapper .tutorial-content {
+    width: 95%;
+  }
+}
 .carousel-wrapper .tutorial-content .tut-bubble {
   width: 70%;
   padding: 14px;
@@ -58,7 +63,12 @@
   top: 0;
   font-size: 3rem;
   border-bottom: 1px solid lightgrey;
-  width: 40%;
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  .carousel-wrapper .tutorial-content h2 {
+    width: 70%;
+  }
 }
 .carousel-wrapper .carousel {
   background: white;
@@ -80,14 +90,19 @@
 }
 @media (max-width: 1000px) {
   .carousel-wrapper .carousel .carousel-button {
-    height: 150px;
-    width: 75px;
-    background: #00c519;
-    top: 40%;
-    border-radius: 0;
-  }
-  .carousel-wrapper .carousel .carousel-button:hover {
+    height: 125px;
+    width: 10%;
     background: #62c46f;
+    top: 40%;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel .carousel-button {
+    top: 430px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
   }
 }
 .carousel-wrapper .carousel .carousel-button:focus {
@@ -95,12 +110,17 @@
 }
 .carousel-wrapper .carousel .carousel-button i {
   font-size: 3rem;
-  color: #00c519;
+  color: #62c46f;
 }
 @media (max-width: 1000px) {
   .carousel-wrapper .carousel .carousel-button i {
     color: white;
     font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel .carousel-button i {
+    font-size: 3rem;
   }
 }
 .carousel-wrapper .carousel .carousel-button--left {
@@ -111,12 +131,32 @@
     margin-left: -100px;
   }
 }
+@media (max-width: 700px) {
+  .carousel-wrapper .carousel .carousel-button--left {
+    margin-left: -43px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel .carousel-button--left {
+    left: 70px;
+  }
+}
 .carousel-wrapper .carousel .carousel-button--right {
   right: 10px;
 }
 @media (max-width: 1000px) {
   .carousel-wrapper .carousel .carousel-button--right {
     right: -50px;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-wrapper .carousel .carousel-button--right {
+    right: -45px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel .carousel-button--right {
+    right: 20px;
   }
 }
 .carousel-wrapper .carousel .is-hidden {
@@ -129,6 +169,12 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0 lightgrey;
+}
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel .carousel-track-container {
+    box-shadow: none;
+    width: 100%;
+  }
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
   position: relative;
@@ -148,6 +194,7 @@
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide .slide {
   height: 100%;
+  width: 100%;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide img {
   width: 100%;
@@ -184,11 +231,29 @@
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel .carousel-track-container {
+    border-radius: 0;
+  }
+}
 @media (max-width: 1000px) {
   .carousel-wrapper .carousel {
     margin: 10px;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-wrapper .carousel {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel {
+    margin: 40px 0;
   }
 }
 @media (max-width: 1000px) {
@@ -447,17 +512,49 @@ header img {
   padding-top: 30px;
   padding-bottom: 10px;
 }
+@media (max-width: 700px) {
+  .accordion-wrapper h2 {
+    width: 55%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .accordion-wrapper h2 {
+    width: 70%;
+  }
+}
 .accordion-wrapper .accordion {
-  width: 50%;
+  width: 700px;
   margin: 30px auto;
 }
 @media (max-width: 1000px) {
   .accordion-wrapper .accordion {
-    width: 80%;
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .accordion-wrapper .accordion {
+    width: 500px;
   }
 }
 @media (max-width: 500px) {
   .accordion-wrapper .accordion {
+    width: 100%;
+    align-items: center;
+  }
+}
+.accordion-wrapper .accordion .accordion-item {
+  width: 700px;
+}
+@media (max-width: 1000px) {
+  .accordion-wrapper .accordion .accordion-item {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .accordion-wrapper .accordion .accordion-item {
     width: 100%;
   }
 }
@@ -475,21 +572,49 @@ header img {
   border-bottom: 1px solid grey;
   transition: all 0.2s;
 }
+@media (max-width: 1000px) {
+  .accordion-wrapper .accordion a {
+    width: 98%;
+  }
+}
+@media (max-width: 500px) {
+  .accordion-wrapper .accordion a {
+    width: 97%;
+    text-align: center;
+  }
+}
 .accordion-wrapper .accordion a:hover,
 .accordion-wrapper .accordion a::after {
   cursor: pointer;
   color: black;
   background: #e8f3e4;
 }
-.accordion-wrapper .accordion i {
-  float: right;
-  position: absolute;
-  font-size: 1rem;
-  color: #58d33f;
+.accordion-wrapper i {
+  cursor: pointer;
+  position: relative;
+  right: -675px;
+  top: -35px;
+  font-size: 1.4rem;
+  color: #62c46f;
   padding: 6px;
   width: 20px;
   height: 20px;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .accordion-wrapper i {
+    right: -575px;
+  }
+}
+@media (max-width: 700px) {
+  .accordion-wrapper i {
+    right: -475px;
+  }
+}
+@media (max-width: 500px) {
+  .accordion-wrapper i {
+    display: none;
+  }
 }
 .accordion-wrapper .content {
   opacity: 0;
@@ -500,10 +625,16 @@ header img {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  margin-top: -30px;
 }
 .accordion-wrapper .content p {
   font-size: 1.3rem;
   font-weight: 300;
+}
+@media (max-width: 500px) {
+  .accordion-wrapper .content {
+    margin: 0;
+  }
 }
 .accordion-wrapper .active {
   opacity: 1;
@@ -516,6 +647,11 @@ header img {
 .accordion-wrapper .active::after {
   color: #03d21f;
   border: 1px solid #03d214;
+}
+@media (max-width: 500px) {
+  .accordion-wrapper {
+    padding: 30px 0;
+  }
 }
 .card-container {
   display: flex;
