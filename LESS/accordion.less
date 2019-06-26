@@ -56,6 +56,7 @@
   .accordion a {
     position: relative;
     display: flex;
+    margin: 5px 0;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -64,15 +65,17 @@
     padding: 1rem 0 1rem 1rem;
     font-size: 1.8rem;
     font-weight: 400;
-    border-bottom: 1px solid grey;
     transition: all .2s;
+    background: @background-grey;
 
     @media @tablet {
       width: 98%;
     }
     @media @mobile {
-      width: 97%;
+      width: 98%;
       text-align: center;
+      margin: 0;
+      border-bottom: 1px solid lightgrey;
     }
 
     &:hover, &::after {
@@ -86,7 +89,7 @@
     cursor: pointer;
     position: relative;
     right: -675px;
-    top: -35px;
+    top: -40px;
     font-size: 1.4rem;
     color: @light-green;
     padding: 6px;
@@ -95,10 +98,10 @@
     text-align: center;
 
     @media @tablet {
-      right: -575px;
+      right: -565px;
     }
     @media (max-width: 700px) {
-      right: -475px;
+      right: -465px;
     }
     @media @mobile {
       display: none;
@@ -119,6 +122,7 @@
       p {
         font-size: 1.3rem;
         font-weight: 300;
+        margin: 0;
       }
       @media @mobile {
         margin: 0;
@@ -138,6 +142,6 @@
     }
   }
   @media @mobile {
-    padding: 30px 0;
+    padding-top: 50px;
   }
 } //accordion-wrapper
