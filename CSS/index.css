@@ -472,7 +472,7 @@ header button {
 }
 @media (max-width: 500px) {
   header button {
-    background-color: #0000cc;
+    background-image: linear-gradient(#3333FF, #0000cc);
     width: 50%;
     left: 25%;
     position: relative;
@@ -481,7 +481,7 @@ header button {
 }
 @media (max-width: 1000px) {
   header button {
-    background-color: #0000cc;
+    background-image: linear-gradient(#3333FF, #0000cc);
     width: 50%;
     left: 25%;
     position: relative;
