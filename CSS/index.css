@@ -280,7 +280,7 @@
   width: 100%;
   text-align: center;
   padding: 14px 0;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   font-family: Roboto;
   color: white;
@@ -299,12 +299,12 @@
   transition: 1s;
 }
 .top-bar h1 {
-  font-size: 4rem;
+  font-size: 36px;
   text-shadow: 2px 2px 4px #000000;
 }
 @media (max-width: 500px) {
   .top-bar h1 {
-    font-size: 3rem;
+    font-size: 30px;
   }
 }
 .top-bar .logins {
@@ -326,14 +326,17 @@
 .top-bar .logins .login-item a {
   text-decoration: none;
   color: white;
-  font-size: 1.6rem;
+  font-size: 18px;
   padding-left: 6px;
 }
 @media (max-width: 500px) {
   .top-bar .logins .login-item a {
-    font-size: 1.2rem;
+    font-size: 12px;
     padding-bottom: 4px;
   }
+}
+.top-bar .logins .login-item:hover {
+  transform: scale(1.2);
 }
 header {
   position: relative;
@@ -342,16 +345,16 @@ header {
 header .text h1 {
   position: absolute;
   z-index: 2;
-  left: 10rem;
+  left: 24px;
   top: 30%;
   width: 50%;
   color: white;
-  font-size: 3rem;
+  font-size: 30px;
   text-decoration: underline;
 }
 @media (max-width: 500px) {
   header .text h1 {
-    font-size: 2rem;
+    font-size: 18px;
     left: 2rem;
     width: 50%;
     top: 27%;
@@ -365,8 +368,8 @@ header .text p {
   top: 45%;
   width: 50%;
   color: white;
-  font-size: 1.6rem;
-  margin: 2rem 10rem;
+  font-size: 18px;
+  margin: 20px 24px;
 }
 @media (max-width: 500px) {
   header .text p {
@@ -378,7 +381,7 @@ header .text p {
     position: relative;
     background: white;
     left: 0;
-    margin-top: 2rem;
+    margin-top: 20px;
   }
 }
 header button {
@@ -389,13 +392,11 @@ header button {
   top: 85%;
   width: 30%;
   color: white;
-  font-size: 1.6rem;
   padding: 14px;
   border-radius: 5px;
   background-color: #00c519;
   border: none;
   font-family: Roboto;
-  font-weight: 700;
   transition: all 0.2s;
   outline: none;
 }
@@ -414,13 +415,19 @@ header button {
     width: 50%;
     left: 25%;
     position: relative;
-    margin: 2rem 0;
+    margin: 20px 0;
   }
 }
 header button a {
   text-decoration: none;
   color: white;
-  font-size: 1.6rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  header button a {
+    font-size: 18px;
+  }
 }
 header button:hover {
   transform: scale(1.05);
@@ -523,8 +530,8 @@ header img {
   justify-content: space-evenly;
   background: #ededed;
   padding-top: 100px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .card-container .flip-card {
   background-color: transparent;
@@ -560,15 +567,24 @@ header img {
   top: 83%;
   width: 100%;
 }
+.card-container .flip-card .flip-card-inner .flip-card-front .text-box h1 {
+  font-size: 24px;
+}
 .card-container .flip-card .flip-card-inner .flip-card-back {
   background-color: #62c46f;
   color: white;
   transform: rotateY(180deg);
 }
+.card-container .flip-card .flip-card-inner .flip-card-back h1 {
+  font-size: 30px;
+}
+.card-container .flip-card .flip-card-inner .flip-card-back h2 {
+  font-size: 24px;
+}
 .card-container .flip-card .flip-card-inner .flip-card-back p {
   text-align: left;
-  padding: 10px;
-  font-size: 1.6rem;
+  padding: 14px;
+  font-size: 18px;
 }
 .card-container .flip-card:hover .flip-card-inner,
 .card-container .flip-card:active .flip-card-inner {
@@ -590,6 +606,9 @@ footer .social-nav a {
 .fab {
   color: black;
   padding: 0 14px;
+}
+.fab:hover {
+  transform: scale(1.5);
 }
 html {
   font-size: 62.5%;
