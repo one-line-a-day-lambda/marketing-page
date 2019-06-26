@@ -383,6 +383,11 @@
     flex-direction: column;
   }
 }
+@media (max-width: 690px) {
+  .top-bar .logins {
+    flex-direction: column;
+  }
+}
 .top-bar .logins .login-item {
   display: flex;
   align-items: center;
