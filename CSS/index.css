@@ -376,3 +376,12 @@ body {
   max-width: 1400px;
   background: #ededed;
 }
+
+.cont{
+  font-size: 1.5rem;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
