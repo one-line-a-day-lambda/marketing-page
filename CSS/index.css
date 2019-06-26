@@ -248,6 +248,7 @@
   position: fixed;
   top: 0;
   z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .top-bar .menu {
   position: absolute;
@@ -268,6 +269,7 @@
   align-items: center;
   margin-top: 20px;
   border: 2.5px solid #62c46f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .top-bar .menu .menu-content .dropdown-link {
   width: 100%;
@@ -287,8 +289,25 @@
   transition: 1s;
 }
 .top-bar h1 {
-  margin: 0;
   font-size: 4rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+.top-bar .logins {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  align-items: center;
+}
+.top-bar .logins .login-item {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+}
+.top-bar .logins .login-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  padding-left: 6px;
 }
 header {
   position: relative;
@@ -310,8 +329,8 @@ header .text p {
   margin: 2rem 10rem;
   left: 0;
   right: 0;
-  top: 50%;
-  width: 60%;
+  top: 45%;
+  width: 50%;
   color: white;
   font-size: 1.6rem;
 }
@@ -336,6 +355,7 @@ header button {
 header button a {
   text-decoration: none;
   color: white;
+  font-size: 1.6rem;
 }
 header button:hover {
   transform: scale(1.05);
@@ -456,6 +476,7 @@ header img {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-container .flip-card .flip-card-inner .flip-card-front,
 .card-container .flip-card .flip-card-inner .flip-card-back {
@@ -520,4 +541,5 @@ body {
 }
 footer p {
   text-align: center;
+  font-size: 1.6rem;
 }
