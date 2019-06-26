@@ -27,15 +27,29 @@
   }
 
   .accordion {
-    width: 50%;
+    width: 700px;
     margin: 30px auto;
 
     @media @tablet {
-      width: 80%;
+      width: 600px;
+    }
+    @media (max-width: 700px) {
+      width: 500px;
     }
     @media @mobile {
       width: 100%;
       align-items: center;
+    }
+
+    .accordion-item{
+      width: 700px;
+
+      @media @tablet {
+        width: 600px;
+      }
+      @media (max-width: 700px) {
+        width: 100%;
+      }
     }
   }
 
@@ -66,14 +80,26 @@
   } // .accordion a
 
   i { // plus/minus icons
-    float: right;
-    position: absolute;
-    font-size: 1rem;
-    color: #58d33f;
+    cursor: pointer;
+    position: relative;
+    right: -675px;
+    top: -35px;
+    font-size: 1.4rem;
+    color: @light-green;
     padding: 6px;
     width: 20px;
     height: 20px;
     text-align: center;
+
+    @media @tablet {
+      right: -575px;
+    }
+    @media (max-width: 700px) {
+      right: -475px;
+    }
+    @media @mobile {
+      display: none;
+    }
   }
 
   .content {
@@ -85,10 +111,14 @@
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+    margin-top: -30px;
 
       p {
         font-size: 1.3rem;
         font-weight: 300;
+      }
+      @media @mobile {
+        margin: 0;
       }
   }
   .active { //active content

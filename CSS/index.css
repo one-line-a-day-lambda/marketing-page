@@ -165,6 +165,11 @@
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0 lightgrey;
 }
+@media (max-width: 500px) {
+  .carousel-wrapper .carousel .carousel-track-container {
+    box-shadow: none;
+  }
+}
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
   position: relative;
   width: 100%;
@@ -506,18 +511,36 @@ header img {
   }
 }
 .accordion-wrapper .accordion {
-  width: 50%;
+  width: 700px;
   margin: 30px auto;
 }
 @media (max-width: 1000px) {
   .accordion-wrapper .accordion {
-    width: 80%;
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .accordion-wrapper .accordion {
+    width: 500px;
   }
 }
 @media (max-width: 500px) {
   .accordion-wrapper .accordion {
     width: 100%;
     align-items: center;
+  }
+}
+.accordion-wrapper .accordion .accordion-item {
+  width: 700px;
+}
+@media (max-width: 1000px) {
+  .accordion-wrapper .accordion .accordion-item {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .accordion-wrapper .accordion .accordion-item {
+    width: 100%;
   }
 }
 .accordion-wrapper .accordion a {
@@ -547,14 +570,31 @@ header img {
   background: #e8f3e4;
 }
 .accordion-wrapper i {
-  float: right;
-  position: absolute;
-  font-size: 1rem;
-  color: #58d33f;
+  cursor: pointer;
+  position: relative;
+  right: -675px;
+  top: -35px;
+  font-size: 1.4rem;
+  color: #62c46f;
   padding: 6px;
   width: 20px;
   height: 20px;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .accordion-wrapper i {
+    right: -575px;
+  }
+}
+@media (max-width: 700px) {
+  .accordion-wrapper i {
+    right: -475px;
+  }
+}
+@media (max-width: 500px) {
+  .accordion-wrapper i {
+    display: none;
+  }
 }
 .accordion-wrapper .content {
   opacity: 0;
@@ -565,10 +605,16 @@ header img {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  margin-top: -30px;
 }
 .accordion-wrapper .content p {
   font-size: 1.3rem;
   font-weight: 300;
+}
+@media (max-width: 500px) {
+  .accordion-wrapper .content {
+    margin: 0;
+  }
 }
 .accordion-wrapper .active {
   opacity: 1;
