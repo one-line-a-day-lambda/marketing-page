@@ -372,7 +372,7 @@ header .text p {
   header .text p {
     font-size: 1.2rem;
     color: black;
-    width: 93%;
+    width: 94.3%;
     padding: 14px;
     margin: 0;
     position: relative;
@@ -561,7 +561,8 @@ header img {
   padding: 10px;
   font-size: 1.6rem;
 }
-.card-container .flip-card:hover .flip-card-inner {
+.card-container .flip-card:hover .flip-card-inner,
+.card-container .flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
 .social-nav {
