@@ -122,6 +122,8 @@
   background: #edffed;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide p {
+  text-align: center;
+  line-height: 1.4;
   height: 30%;
   font-size: 1.4rem;
   position: absolute;
@@ -409,6 +411,15 @@ header img {
 }
 .card-container .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+}
+.social-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+}
+.social-nav i {
+  font-size: 25px;
 }
 html {
   font-size: 62.5%;
