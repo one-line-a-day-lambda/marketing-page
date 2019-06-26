@@ -17,18 +17,35 @@
     margin-top: 10px;
     padding-left: 5%;
 
+    @media @tablet {
+      height: auto;
+      padding: 0;
+      width: 70%;
+    }
+
     .tut-bubble {
       width: 70%;
+      padding: 14px;
       height: 20%;
-      border: 3px solid rgb(225, 255, 227);
+      border: 1px solid @primary-green;
       border-radius: 10px;
       box-shadow: 3px 3px 3px 0 lightgrey;
       margin-top: 10px;
       background: @very-light-green;
 
+      @media @tablet {
+        width: 90%;
+      }
+
       h3 {
         text-align: center;
         text-decoration: underline;
+        margin-top: 0;
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.3rem;
+        text-align: center;
       }
     }
 
@@ -126,27 +143,38 @@
             margin-top: 0;
             margin-left: 8px;
             border-radius: 15px;
-            border: 2px solid @light-green;
+            border: 1px solid @light-green;
             background: @very-light-green;
           }
           p {
             text-align: center;
             line-height: 1.4;
-            height: 30%;
+            height: auto;
             font-size: 1.4rem;
             position: absolute;
-            top: 40%;
-            padding: 30px;
+            bottom: 8px;
+            padding: 20px;
             margin: 20px;
             border-radius: 15px;
             background: white;
-            border: 2px solid @light-green;
+            border: 1px solid @light-green;
             background: @very-light-green;
           }
         } // arousel-slide
       } // carousel-track
     } // carousel-track-container
+    @media @tablet {
+      margin: 10px;
+    }
   } // carousel
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 0;
+  }
 } // carousel-wrapper
 
 // nav underneath the carousel

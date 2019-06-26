@@ -17,18 +17,37 @@
   margin-top: 10px;
   padding-left: 5%;
 }
+@media (max-width: 1000px) {
+  .carousel-wrapper .tutorial-content {
+    height: auto;
+    padding: 0;
+    width: 70%;
+  }
+}
 .carousel-wrapper .tutorial-content .tut-bubble {
   width: 70%;
+  padding: 14px;
   height: 20%;
-  border: 3px solid #e1ffe3;
+  border: 1px solid #00c519;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0 lightgrey;
   margin-top: 10px;
   background: #edffed;
 }
+@media (max-width: 1000px) {
+  .carousel-wrapper .tutorial-content .tut-bubble {
+    width: 90%;
+  }
+}
 .carousel-wrapper .tutorial-content .tut-bubble h3 {
   text-align: center;
   text-decoration: underline;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+.carousel-wrapper .tutorial-content .tut-bubble p {
+  font-size: 1.3rem;
+  text-align: center;
 }
 .carousel-wrapper .tutorial-content h2 {
   text-align: center;
@@ -118,22 +137,36 @@
   margin-top: 0;
   margin-left: 8px;
   border-radius: 15px;
-  border: 2px solid #62c46f;
+  border: 1px solid #62c46f;
   background: #edffed;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide p {
   text-align: center;
   line-height: 1.4;
-  height: 30%;
+  height: auto;
   font-size: 1.4rem;
   position: absolute;
-  top: 40%;
-  padding: 30px;
+  bottom: 8px;
+  padding: 20px;
   margin: 20px;
   border-radius: 15px;
   background: white;
-  border: 2px solid #62c46f;
+  border: 1px solid #62c46f;
   background: #edffed;
+}
+@media (max-width: 1000px) {
+  .carousel-wrapper .carousel {
+    margin: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 0;
+  }
 }
 .carousel-nav {
   display: flex;
@@ -301,14 +334,24 @@ header img {
   width: 50%;
   margin: 30px auto;
 }
+@media (max-width: 1000px) {
+  .accordion-wrapper .accordion {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .accordion-wrapper .accordion {
+    width: 100%;
+  }
+}
 .accordion-wrapper .accordion a {
   position: relative;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   flex-direction: column;
-  width: 100%;
   padding: 1rem 0 1rem 1rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -322,8 +365,8 @@ header img {
   background: #e8f3e4;
 }
 .accordion-wrapper i {
-  position: absolute;
   float: right;
+  position: absolute;
   font-size: 1rem;
   color: #58d33f;
   padding: 6px;
@@ -415,11 +458,14 @@ header img {
 .social-nav {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
+  width: 40%;
   margin: 0 auto;
   height: 50px;
 }
-.social-nav i {
+.social-nav .fab {
   font-size: 25px;
+  margin: 0 10px;
 }
 html {
   font-size: 62.5%;

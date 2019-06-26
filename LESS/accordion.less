@@ -19,16 +19,23 @@
   .accordion {
     width: 50%;
     margin: 30px auto;
+
+    @media @tablet {
+      width: 80%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .accordion a {
     position: relative;
     display: flex;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     flex-direction: column;
-    width: 100%;
     padding: 1rem 0 1rem 1rem;
     font-size: 1.8rem;
     font-weight: 400;
@@ -40,14 +47,11 @@
       color: black;
       background: rgb(232, 243, 228);
     }
-    &:hover::after {
-
-    }
   } // .accordion a
 
   i { // plus/minus icons
-    position: absolute;
     float: right;
+    position: absolute;
     font-size: 1rem;
     color: #58d33f;
     padding: 6px;
