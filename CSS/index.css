@@ -85,7 +85,6 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0 lightgrey;
-  border: 3px solid #e8ffea;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track {
   position: relative;
@@ -109,15 +108,25 @@
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide img {
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.8;
 }
-.carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide p {
+.carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide h3 {
+  font-size: 1.6rem;
   position: absolute;
-  top: 50%;
+  top: 10px;
   padding: 10px;
   margin: 0 10px;
   border-radius: 5px;
-  background: #edffed;
+  background: white;
+}
+.carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide p {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 40%;
+  padding: 50px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background: white;
 }
 .carousel-nav {
   display: flex;
