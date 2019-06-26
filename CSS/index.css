@@ -78,8 +78,17 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.carousel-wrapper .carousel .carousel-button:hover {
-  transform: scale(1.2);
+@media (max-width: 1000px) {
+  .carousel-wrapper .carousel .carousel-button {
+    height: 150px;
+    width: 75px;
+    background: #00c519;
+    top: 40%;
+    border-radius: 0;
+  }
+  .carousel-wrapper .carousel .carousel-button:hover {
+    background: #62c46f;
+  }
 }
 .carousel-wrapper .carousel .carousel-button:focus {
   outline: none;
@@ -88,11 +97,27 @@
   font-size: 3rem;
   color: #00c519;
 }
+@media (max-width: 1000px) {
+  .carousel-wrapper .carousel .carousel-button i {
+    color: white;
+    font-size: 5rem;
+  }
+}
 .carousel-wrapper .carousel .carousel-button--left {
   margin-left: -40px;
 }
+@media (max-width: 1000px) {
+  .carousel-wrapper .carousel .carousel-button--left {
+    margin-left: -100px;
+  }
+}
 .carousel-wrapper .carousel .carousel-button--right {
   right: 10px;
+}
+@media (max-width: 1000px) {
+  .carousel-wrapper .carousel .carousel-button--right {
+    right: -50px;
+  }
 }
 .carousel-wrapper .carousel .is-hidden {
   display: none;
@@ -155,8 +180,15 @@
   background: #edffed;
 }
 @media (max-width: 1000px) {
+  .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
   .carousel-wrapper .carousel {
     margin: 10px;
+    width: 500px;
+    height: 500px;
   }
 }
 @media (max-width: 1000px) {

@@ -80,8 +80,16 @@
       border-radius: 50%;
       cursor: pointer;
 
-      &:hover {
-        transform: scale(1.2);
+      @media @tablet {
+        height: 150px;
+        width: 75px;
+        background: @primary-green;
+        top: 40%;
+        border-radius: 0;
+
+        &:hover {
+          background: @light-green;
+        }
       }
       &:focus {
         outline: none;
@@ -90,13 +98,26 @@
       i {
         font-size: 3rem;
         color: @primary-green;
+
+        @media @tablet {
+          color: white;
+          font-size: 5rem;
+        }
       }
     }
     .carousel-button--left {
       margin-left: -40px;
+
+      @media @tablet {
+        margin-left: -100px;
+      }
     }
     .carousel-button--right {
       right: 10px;
+
+      @media @tablet {
+        right: -50px;
+      }
     }
     .is-hidden {
       display: none;
@@ -160,11 +181,16 @@
             border: 1px solid @light-green;
             background: @very-light-green;
           }
+          @media @tablet {
+            width: 100%;
+          }
         } // arousel-slide
       } // carousel-track
     } // carousel-track-container
     @media @tablet {
       margin: 10px;
+      width: 500px;
+      height: 500px;
     }
   } // carousel
 
