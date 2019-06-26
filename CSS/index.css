@@ -133,7 +133,7 @@
 }
 @media (max-width: 700px) {
   .carousel-wrapper .carousel .carousel-button--left {
-    margin-left: -50px;
+    margin-left: -45px;
   }
 }
 @media (max-width: 500px) {
@@ -147,6 +147,11 @@
 @media (max-width: 1000px) {
   .carousel-wrapper .carousel .carousel-button--right {
     right: -50px;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-wrapper .carousel .carousel-button--right {
+    right: -45px;
   }
 }
 @media (max-width: 500px) {
@@ -567,9 +572,14 @@ header img {
   border-bottom: 1px solid grey;
   transition: all 0.2s;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .accordion-wrapper .accordion a {
     width: 98%;
+  }
+}
+@media (max-width: 500px) {
+  .accordion-wrapper .accordion a {
+    width: 97%;
     text-align: center;
   }
 }
