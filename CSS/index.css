@@ -308,7 +308,7 @@
   width: 100%;
   left: 0;
   height: 75px;
-  background-color: #00c519;
+  background-image: linear-gradient(#62c46f, #008010);
   color: white;
   display: flex;
   justify-content: center;
@@ -386,6 +386,11 @@
     flex-direction: column;
   }
 }
+@media (max-width: 690px) {
+  .top-bar .logins {
+    flex-direction: column;
+  }
+}
 .top-bar .logins .login-item {
   display: flex;
   align-items: center;
@@ -414,7 +419,7 @@ header .text h1 {
   position: absolute;
   z-index: 2;
   left: 24px;
-  top: 30%;
+  top: 25%;
   width: 50%;
   color: white;
   font-size: 30px;
@@ -433,10 +438,10 @@ header .text p {
   z-index: 2;
   left: 0;
   right: 0;
-  top: 45%;
+  top: 42%;
   width: 50%;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   margin: 20px 24px;
 }
 @media (max-width: 500px) {

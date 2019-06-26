@@ -4,7 +4,7 @@
     width: 100%;
     left: 0;
     height: 75px;
-    background-color: @primary-green;
+    background-image: linear-gradient(@light-green, @dark-green);
     color: white;
     display: flex;
     justify-content: center;
@@ -78,6 +78,10 @@
         flex-direction: column;
       }
 
+      @media (max-width: 690px) {
+        flex-direction: column;
+      }
+
       .login-item {
         display: flex;
         align-items: center;
@@ -112,7 +116,7 @@
           position: absolute;
           z-index: 2;
           left: 24px;
-          top: 30%;
+          top: 25%;
           width: 50%;
           color: white;
           font-size: 30px;
@@ -130,10 +134,10 @@
           z-index: 2;
           left: 0;
           right: 0;
-          top: 45%;
+          top: 42%;
           width: 50%;
           color: white;
-          font-size: 18px;
+          font-size: 14px;
           margin: 20px 24px;
 
           @media @mobile {
