@@ -14,6 +14,16 @@
     margin: auto;
     padding-top: 30px;
     padding-bottom: 10px;
+
+    @media (max-width: 700px) {
+      width: 55%;
+      border: 1px solid lightgrey;
+      padding: 10px;
+      margin-top: 50px;
+    }
+    @media @mobile {
+      width: 70%;
+    }
   }
 
   .accordion {
@@ -25,6 +35,7 @@
     }
     @media @mobile {
       width: 100%;
+      align-items: center;
     }
   }
 
@@ -41,6 +52,11 @@
     font-weight: 400;
     border-bottom: 1px solid grey;
     transition: all .2s;
+
+    @media @mobile {
+      width: 98%;
+      text-align: center;
+    }
 
     &:hover, &::after {
       cursor: pointer;
@@ -87,5 +103,8 @@
       color: #03d21f;
       border: 1px solid #03d214;
     }
+  }
+  @media @mobile {
+    padding: 30px 0;
   }
 } //accordion-wrapper
