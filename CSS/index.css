@@ -481,7 +481,7 @@ header img {
   color: black;
   background: #e8f3e4;
 }
-.accordion-wrapper i {
+.accordion-wrapper .accordion i {
   float: right;
   position: absolute;
   font-size: 1rem;
@@ -574,18 +574,6 @@ header img {
 .card-container .flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
-.social-nav {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  width: 40%;
-  margin: 0 auto;
-  height: 50px;
-}
-.social-nav .fab {
-  font-size: 25px;
-  margin: 0 10px;
-}
 html {
   font-size: 62.5%;
 }
@@ -605,7 +593,20 @@ body {
   width: 100%;
   background: #ededed;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 footer p {
   text-align: center;
   font-size: 1.6rem;
+}
+footer .social-nav a {
+  text-decoration: none;
+}
+footer .social-nav a i {
+  color: black;
+  padding: 0 14px;
 }
