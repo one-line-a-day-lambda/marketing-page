@@ -17,18 +17,35 @@
     margin-top: 10px;
     padding-left: 5%;
 
+    @media @tablet {
+      height: auto;
+      padding: 0;
+      width: 70%;
+    }
+
     .tut-bubble {
       width: 70%;
+      padding: 14px;
       height: 20%;
-      border: 3px solid rgb(225, 255, 227);
+      border: 1px solid @primary-green;
       border-radius: 10px;
       box-shadow: 3px 3px 3px 0 lightgrey;
       margin-top: 10px;
       background: @very-light-green;
 
+      @media @tablet {
+        width: 90%;
+      }
+
       h3 {
         text-align: center;
         text-decoration: underline;
+        margin-top: 0;
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.3rem;
+        text-align: center;
       }
     }
 
@@ -63,8 +80,16 @@
       border-radius: 50%;
       cursor: pointer;
 
-      &:hover {
-        transform: scale(1.2);
+      @media @tablet {
+        height: 150px;
+        width: 75px;
+        background: @primary-green;
+        top: 40%;
+        border-radius: 0;
+
+        &:hover {
+          background: @light-green;
+        }
       }
       &:focus {
         outline: none;
@@ -73,13 +98,26 @@
       i {
         font-size: 3rem;
         color: @primary-green;
+
+        @media @tablet {
+          color: white;
+          font-size: 5rem;
+        }
       }
     }
     .carousel-button--left {
       margin-left: -40px;
+
+      @media @tablet {
+        margin-left: -100px;
+      }
     }
     .carousel-button--right {
       right: 10px;
+
+      @media @tablet {
+        right: -50px;
+      }
     }
     .is-hidden {
       display: none;
@@ -126,37 +164,43 @@
             margin-top: 0;
             margin-left: 8px;
             border-radius: 15px;
-            border: 2px solid @light-green;
+            border: 1px solid @light-green;
             background: @very-light-green;
           }
           p {
-            height: 30%;
+            text-align: center;
+            line-height: 1.4;
+            height: auto;
             font-size: 1.4rem;
             position: absolute;
-            top: 40%;
-            padding: 30px;
+            bottom: 8px;
+            padding: 20px;
             margin: 20px;
             border-radius: 15px;
             background: white;
-            border: 2px solid @light-green;
+            border: 1px solid @light-green;
             background: @very-light-green;
           }
-          .slide-1-content {
-            
+          @media @tablet {
+            width: 100%;
           }
-          .slide-2-content {
-            
-          }
-          .slide-3-content {
-            
-          }
-          .slide-4-content {
-            
-          }
-        }
-      }
+        } // arousel-slide
+      } // carousel-track
     } // carousel-track-container
+    @media @tablet {
+      margin: 10px;
+      width: 500px;
+      height: 500px;
+    }
   } // carousel
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 0;
+  }
 } // carousel-wrapper
 
 // nav underneath the carousel
