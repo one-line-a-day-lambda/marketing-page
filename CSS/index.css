@@ -408,6 +408,15 @@ header button {
     margin: 2rem 0;
   }
 }
+@media (max-width: 1000px) {
+  header button {
+    background-color: #0000cc;
+    width: 50%;
+    left: 25%;
+    position: relative;
+    margin: 2rem 0;
+  }
+}
 header button a {
   text-decoration: none;
   color: white;

@@ -3,7 +3,7 @@
 @import '../LESS/header.less';
 @import '../LESS/accordion.less';
 @import '../LESS/about.less';
-@import '../LESS/social-nav.less';
+// @import '../LESS/social-nav.less';
 
 html {
     font-size: 62.5%;
@@ -28,8 +28,27 @@ body {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   p{
     text-align: center;
     font-size: 1.6rem;
   }
+
+  .social-nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    height: 50px;
+  
+    .fab {
+      font-size: 25px;
+      margin: 0 10px;
+    }
+  }
+
+
 }
