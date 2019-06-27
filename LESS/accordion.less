@@ -53,6 +53,7 @@
 
       a.active {
         background: @light-green;
+        color: white;
       }
     }
   }
@@ -94,12 +95,11 @@
     right: -675px;
     top: -40px;
     font-size: 1.4rem;
-    color: white;
+    color: @light-green;
     padding: 6px;
     width: 20px;
     height: 20px;
     text-align: center;
-    text-shadow: 1px 1px 2px black;
 
     @media @tablet {
       right: -565px;
@@ -110,6 +110,10 @@
     @media @mobile {
       display: none;
     }
+  }
+
+  i.fa-minus {
+    color: white;
   }
 
   .content {
@@ -140,9 +144,10 @@
     -webkit-transition: all 0.35s ease 0.15s;
     -o-transition: all 0.35s ease 0.15s;
     transition: all 0.35s ease 0.2s;
-    box-shadow: 2px 2px 3px 1px lightgrey;
+    box-shadow: 1px 2px 3px 1px lightgrey;
     margin: 20px auto;
     margin-top: -20px;
+    border-radius: 3px;
 
     @media @mobile {
       margin: 10px auto;

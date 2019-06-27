@@ -39,7 +39,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
   }
 }
 
-// when I click right, move slides right
+// when the right button is clicked, move slides right
 nextButton.addEventListener('click', e => {
   let currentSlide = track.querySelector('.current-slide');
   let nextSlide = currentSlide.nextElementSibling;
@@ -52,7 +52,7 @@ nextButton.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
-// when I click left, move slides left
+// when the left button is clicked, move slides left
 prevButton.addEventListener('click', e => {
   let currentSlide = track.querySelector('.current-slide');
   let prevSlide = currentSlide.previousElementSibling;
@@ -65,7 +65,7 @@ prevButton.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
-//when I click the nav indicators, move to that slide
+//when the nav indicator dot is clicked, move to that slide
 dotsNav.addEventListener('click', e => {
   // which indicator was clicked on
   let targetDot = e.target.closest('button');
