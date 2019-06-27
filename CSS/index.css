@@ -495,11 +495,11 @@ header button {
   top: 85%;
   width: 30%;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
   padding: 14px;
   border-radius: 5px;
   background-image: linear-gradient(#62c46f, #008010);
   border: none;
-  font-family: Roboto;
   transition: all 0.2s;
   outline: none;
 }
