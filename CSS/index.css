@@ -33,11 +33,10 @@
   width: 70%;
   padding: 14px;
   height: 20%;
-  border: 1px solid #00c519;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px 0 lightgrey;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px lightgrey;
   margin-top: 10px;
-  background: #edffed;
+  background: white;
 }
 @media (max-width: 1000px) {
   .carousel-wrapper .tutorial-content .tut-bubble {
@@ -65,7 +64,7 @@
   margin: auto;
   margin-top: 50px;
   margin-bottom: 10px;
-  padding-bottom: 5px;
+  padding: 5px;
   top: 0;
   font-size: 3rem;
   border-bottom: 1px solid lightgrey;
@@ -79,10 +78,10 @@
 .carousel-wrapper .carousel {
   background: white;
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 50px;
 }
 .carousel-wrapper .carousel .carousel-button {
@@ -188,7 +187,7 @@
   margin: auto;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 3px 3px 3px 0 lightgrey;
 }
 @media (max-width: 500px) {
@@ -209,7 +208,7 @@
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide {
   position: absolute;
   margin: auto;
-  width: 400px;
+  width: 500px;
   height: 100%;
   background: #ededed;
 }
@@ -232,6 +231,7 @@
   border-radius: 15px;
   border: 1px solid #62c46f;
   background: #edffed;
+  box-shadow: 0px 0px 2px 1px #62c46f;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide p {
   text-align: center;
@@ -246,6 +246,7 @@
   background: white;
   border: 1px solid #62c46f;
   background: #edffed;
+  box-shadow: 0px 0px 2px 1px #62c46f;
 }
 @media (max-width: 1000px) {
   .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide {
@@ -380,6 +381,7 @@
   text-decoration: none;
   font-family: Roboto;
   color: white;
+  transition: background-color 0.4s;
 }
 @media (max-width: 500px) {
   .top-bar .menu .menu-content .dropdown-link {
@@ -451,8 +453,7 @@ header .text h1 {
   top: 25%;
   width: 50%;
   color: white;
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 50px;
 }
 @media (max-width: 500px) {
   header .text h1 {
@@ -494,11 +495,11 @@ header button {
   top: 85%;
   width: 30%;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
   padding: 14px;
   border-radius: 5px;
   background-image: linear-gradient(#62c46f, #008010);
   border: none;
-  font-family: Roboto;
   transition: all 0.2s;
   outline: none;
 }
@@ -812,7 +813,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: 'Fira Sans', sans-serif;
   background-color: #ededed;
 }
 body {
