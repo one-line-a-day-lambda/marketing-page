@@ -21,6 +21,7 @@ function toggleAccordion(){
 
 function toggle() {
   this.nextElementSibling.classList.toggle('active');
+  this.previousElementSibling.classList.toggle('active');
 
   if(this.classList[2] == 'fa-minus'){
     this.classList.remove('fa-minus');

@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   background: white;
+  margin: 20px 0;
+  padding-bottom: 50px;
 }
 .carousel-wrapper .tutorial-content {
   display: flex;
@@ -127,7 +129,8 @@
   transform: translateY(4px);
 }
 .carousel-wrapper .carousel .carousel-button i {
-  font-size: 3rem;
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px lightgrey;
   color: #62c46f;
 }
 @media (max-width: 1000px) {
@@ -285,6 +288,11 @@
     flex-direction: column;
     height: auto;
     align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-wrapper {
+    margin: 0;
     padding: 0;
   }
 }
@@ -415,6 +423,7 @@
   display: flex;
   align-items: center;
   padding-left: 14px;
+  transition: transform 0.2s;
 }
 .top-bar .logins .login-item a {
   text-decoration: none;
@@ -535,7 +544,6 @@ header img {
   min-height: 400px;
   background-image: linear-gradient(270deg, #ffffff 0%, #e6ffe3 100%);
   padding: 50px 0;
-  margin-top: -20px;
   background: white;
 }
 .accordion-wrapper h2 {
@@ -578,6 +586,7 @@ header img {
   .accordion-wrapper .accordion {
     width: 100%;
     align-items: center;
+    margin-bottom: 0;
   }
 }
 .accordion-wrapper .accordion .accordion-item {
@@ -593,6 +602,9 @@ header img {
     width: 100%;
   }
 }
+.accordion-wrapper .accordion .accordion-item a.active {
+  background: #62c46f;
+}
 .accordion-wrapper .accordion a {
   position: relative;
   display: flex;
@@ -604,9 +616,9 @@ header img {
   flex-direction: column;
   padding: 1rem 0 1rem 1rem;
   font-size: 1.8rem;
-  font-weight: 400;
   transition: all 0.2s;
   background: #ededed;
+  border-radius: 3px;
 }
 @media (max-width: 1000px) {
   .accordion-wrapper .accordion a {
@@ -633,11 +645,12 @@ header img {
   right: -675px;
   top: -40px;
   font-size: 1.4rem;
-  color: #62c46f;
+  color: white;
   padding: 6px;
   width: 20px;
   height: 20px;
   text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
 @media (max-width: 1000px) {
   .accordion-wrapper i {
@@ -689,7 +702,7 @@ header img {
 }
 @media (max-width: 500px) {
   .accordion-wrapper {
-    padding-top: 50px;
+    min-height: 300px;
   }
 }
 .card-container {
