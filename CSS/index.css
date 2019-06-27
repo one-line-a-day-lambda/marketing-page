@@ -100,6 +100,17 @@
     top: 40%;
     border-radius: 5px;
   }
+  .carousel-wrapper .carousel .carousel-button:active {
+    animation: btnClick 0.5s;
+  }
+  @keyframes btnClick {
+    0% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 @media (max-width: 500px) {
   .carousel-wrapper .carousel .carousel-button {
@@ -111,6 +122,9 @@
 }
 .carousel-wrapper .carousel .carousel-button:focus {
   outline: none;
+}
+.carousel-wrapper .carousel .carousel-button:active {
+  transform: translateY(4px);
 }
 .carousel-wrapper .carousel .carousel-button i {
   font-size: 3rem;
@@ -160,7 +174,7 @@
 }
 @media (max-width: 500px) {
   .carousel-wrapper .carousel .carousel-button--right {
-    right: 20px;
+    right: 30px;
   }
 }
 .carousel-wrapper .carousel .is-hidden {
@@ -187,7 +201,7 @@
   margin: 0;
   padding-inline-start: 0px;
   list-style: none;
-  transition: transform 0.35s ease-in-out;
+  transition: transform 0.55s ease-in-out;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide {
   position: absolute;
@@ -757,11 +771,12 @@ footer p {
 footer .social-nav a {
   text-decoration: none;
 }
-.fab {
+footer .fab {
   color: black;
-  padding: 0 14px;
+  transition: all 0.2s;
+  margin: 0 10px;
 }
-.fab:hover {
+footer .fab:hover {
   transform: scale(1.5);
 }
 html {

@@ -95,6 +95,9 @@
         background: @light-green;
         top: 40%;
         border-radius: 5px;
+        &:active {
+          .btn-click-fade();
+        }
       }
       @media @mobile {
         top: 430px;
@@ -104,6 +107,9 @@
       }
       &:focus {
         outline: none;
+      }
+      &:active {
+        transform: translateY(4px);
       }
 
       i {
@@ -142,7 +148,7 @@
         right: -45px;
       }
       @media @mobile {
-        right: 20px;
+        right: 30px;
       }
     }
     .is-hidden {
@@ -169,7 +175,7 @@
         margin: 0;
         padding-inline-start: 0px;
         list-style: none;
-        transition: transform .35s ease-in-out;
+        transition: transform .55s ease-in-out;
 
         .carousel-slide {
           position: absolute;
@@ -249,7 +255,7 @@
   }
 } // carousel-wrapper
 
-// nav underneath the carousel
+// nav underneath carousel
 .carousel-nav {
   display: flex;
   justify-content: center;

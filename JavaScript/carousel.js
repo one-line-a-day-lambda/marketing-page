@@ -65,7 +65,7 @@ prevButton.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
-//when i click the nav indicators, move to that slide
+//when I click the nav indicators, move to that slide
 dotsNav.addEventListener('click', e => {
   // which indicator was clicked on
   let targetDot = e.target.closest('button');
