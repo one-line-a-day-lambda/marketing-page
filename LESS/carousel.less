@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   background: white;
+  margin: 20px 0;
+  padding-bottom: 50px;
   
   .tutorial-content {
     display: flex;
@@ -113,7 +115,8 @@
       }
 
       i {
-        font-size: 3rem;
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px lightgrey;
         color: @light-green;
 
         @media @tablet {
@@ -251,6 +254,9 @@
     flex-direction: column;
     height: auto;
     align-items: center;
+  }
+  @media @mobile {
+    margin: 0;
     padding: 0;
   }
 } // carousel-wrapper
