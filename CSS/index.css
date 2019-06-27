@@ -450,14 +450,19 @@ header .text h1 {
   position: absolute;
   z-index: 2;
   left: 24px;
-  top: 25%;
+  top: 20%;
   width: 50%;
   color: white;
   font-size: 50px;
 }
+@media (max-width: 1000px) {
+  header .text h1 {
+    font-size: 30px;
+  }
+}
 @media (max-width: 500px) {
   header .text h1 {
-    font-size: 18px;
+    font-size: 24px;
     left: 2rem;
     width: 50%;
     top: 27%;
@@ -473,6 +478,11 @@ header .text p {
   color: white;
   font-size: 14px;
   margin: 20px 24px;
+}
+@media (max-width: 1000px) {
+  header .text p {
+    top: 38%;
+  }
 }
 @media (max-width: 500px) {
   header .text p {
@@ -501,7 +511,7 @@ header button {
   background-image: linear-gradient(#62c46f, #008010);
   border: none;
   transition: all 0.2s;
-  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 500px) {
   header button {

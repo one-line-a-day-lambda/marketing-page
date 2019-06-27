@@ -118,13 +118,17 @@
           position: absolute;
           z-index: 2;
           left: 24px;
-          top: 25%;
+          top: 20%;
           width: 50%;
           color: white;
           font-size: 50px;
 
+          @media @tablet {
+            font-size: 30px;
+          }
+
           @media @mobile {
-            font-size: 18px;
+            font-size: 24px;
             left: 2rem;
             width: 50%;
             top: 27%;
@@ -140,6 +144,10 @@
           color: white;
           font-size: 14px;
           margin: 20px 24px;
+
+          @media @tablet {
+            top: 38%;
+          }
 
           @media @mobile {
             font-size: 1.2rem;
@@ -170,7 +178,7 @@
       // background-color: @primary-green;
       border: none;
       transition: all .2s;
-      outline: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
       @media @mobile {
         background-image: linear-gradient(#3333FF, @accent-blue);
