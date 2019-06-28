@@ -136,7 +136,7 @@
         margin: 0;
       }
   }
-  .active { //active content
+  .active { // active <a> and content
     opacity: 1;
     padding: 1rem;
     max-height: 100%;
@@ -144,7 +144,6 @@
     -webkit-transition: all 0.35s ease 0.15s;
     -o-transition: all 0.35s ease 0.15s;
     transition: all 0.35s ease 0.2s;
-    box-shadow: 1px 2px 3px 1px lightgrey;
     margin: 20px auto;
     margin-top: -20px;
     border-radius: 3px;
@@ -156,6 +155,17 @@
     &::after {
       color: #03d21f;
       border: 1px solid #03d214;
+    }
+  }
+  div.active { // active content
+    box-shadow: 1px 2px 3px 1px lightgrey;
+    @media (min-width: 700px) {
+      margin-bottom: 40px;
+    }
+  }
+  a.active { // active <a>
+    @media (min-width: 700px) {
+      transform: scale(1.05);
     }
   }
   @media @mobile {
