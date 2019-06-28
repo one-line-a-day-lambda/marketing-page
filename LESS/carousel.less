@@ -144,7 +144,7 @@
         margin-left: -43px;
       }
       @media @mobile {
-        left: 70px;
+        left: 50px;
       }
     }
     .carousel-button--right {
@@ -162,7 +162,7 @@
         right: -45px;
       }
       @media @mobile {
-        right: 30px;
+        right: 10px;
       }
     }
     .is-hidden {
@@ -293,6 +293,11 @@
   justify-content: center;
   padding: 20px 0 0 0;
 
+  @media @mobile {
+    width: 40%;
+    margin: 5px auto;
+  }
+
   .carousel-indicator {
     border: 0;
     border-radius: 50%;
@@ -302,6 +307,9 @@
     margin: 0 20px;
     outline: none;
     cursor: pointer;
+    @media @mobile {
+      margin: 0 15px;
+    }
   }
   .current-slide {
     background: @light-green;

@@ -174,7 +174,7 @@
 }
 @media (max-width: 500px) {
   .carousel-wrapper .carousel .carousel-button--left {
-    left: 70px;
+    left: 50px;
   }
 }
 .carousel-wrapper .carousel .carousel-button--right {
@@ -197,7 +197,7 @@
 }
 @media (max-width: 500px) {
   .carousel-wrapper .carousel .carousel-button--right {
-    right: 30px;
+    right: 10px;
   }
 }
 .carousel-wrapper .carousel .is-hidden {
@@ -336,6 +336,12 @@
   justify-content: center;
   padding: 20px 0 0 0;
 }
+@media (max-width: 500px) {
+  .carousel-nav {
+    width: 40%;
+    margin: 5px auto;
+  }
+}
 .carousel-nav .carousel-indicator {
   border: 0;
   border-radius: 50%;
@@ -345,6 +351,11 @@
   margin: 0 20px;
   outline: none;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .carousel-nav .carousel-indicator {
+    margin: 0 15px;
+  }
 }
 .carousel-nav .current-slide {
   background: #62c46f;
