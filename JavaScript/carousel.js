@@ -26,6 +26,7 @@ const updateDots = (currentDot, targetDot) => {
   targetDot.classList.add('current-slide');
 }
 
+// hide arrow when at either furthest end of carousel
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
   if (targetIndex === 0) { // when at the first slide, hide left arrow
     prevButton.classList.add('is-hidden');
