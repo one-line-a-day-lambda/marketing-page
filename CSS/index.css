@@ -273,7 +273,7 @@
   margin-left: 10px;
   border-radius: 3px;
   background: white;
-  box-shadow: 13px 13px 0px 0px #62c46f;
+  box-shadow: 15px 15px 0px 0px #62c46f;
   transition: all 0.2s;
 }
 .carousel-wrapper .carousel .carousel-track-container .carousel-track .carousel-slide p:hover {
@@ -538,8 +538,9 @@ header .text p {
     left: 0;
     top: -30px;
     z-index: 0;
-    border-radius: 15px;
+    border-radius: 5px;
     background: white;
+    box-shadow: 3px 3px 3px 0px #5c5c5c;
   }
 }
 header button {
@@ -791,7 +792,6 @@ header img {
 @media (max-width: 500px) {
   .accordion-wrapper {
     min-height: 300px;
-    padding-bottom: 0px;
   }
 }
 .card-container {
