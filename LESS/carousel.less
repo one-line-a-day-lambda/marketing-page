@@ -34,6 +34,7 @@
       box-shadow: 1px 1px 3px 1px lightgrey;
       margin-top: 10px;
       background: white;
+      .bg-to-green();
 
       @media @tablet {
         width: 90%;
@@ -126,10 +127,15 @@
       }
     }
     .carousel-button--left {
-      margin-left: -40px;
+      left: 0px;
+      @media (min-width: 1000px) {
+        &:hover {
+          left: -7px;
+        }
+      }
 
       @media @tablet {
-        margin-left: -100px;
+        margin-left: -50px;
       }
       @media (max-width: 700px) {
         margin-left: -43px;
@@ -139,7 +145,12 @@
       }
     }
     .carousel-button--right {
-      right: 10px;
+      right: 0px;
+      @media (min-width: 1000px) {
+        &:hover {
+          right: -7px;
+        }
+      }
 
       @media @tablet {
         right: -50px;
