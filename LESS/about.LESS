@@ -5,11 +5,11 @@
     .card-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         background: @background-grey;
         padding-top: 100px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 24px;
+        padding-right: 24px;
 
 
     
@@ -29,6 +29,7 @@
                 text-align: center;
                 transition: transform 0.8s;
                 transform-style: preserve-3d;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
                 .flip-card-front, .flip-card-back {
                     position: absolute;
@@ -44,6 +45,9 @@
                         position: absolute;
                         top: 83%;
                         width: 100%;
+                        h1 {
+                          font-size: 24px;
+                        }
                     }
                   }
         
@@ -51,13 +55,26 @@
                     background-color: @light-green;
                     color: white;
                     transform: rotateY(180deg);
+                    h1 {
+                      font-size: 30px;
+                    }
+                    h2 {
+                      font-size: 24px;
+                    }
+                    p {
+                      text-align: left;
+                      padding: 14px;
+                      font-size: 18px;
+                    }
                   }
               }
         }
         
-        .flip-card:hover .flip-card-inner {
+        .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner {
             transform: rotateY(180deg);
           }
+
+
     }
 
 

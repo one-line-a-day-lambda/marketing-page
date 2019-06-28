@@ -13,31 +13,33 @@ const setSlidePosition = (slide, index) => {
 }
 slides.forEach(setSlidePosition);
 
+// move to the target slide
 const moveToSlide = (track, currentSlide, targetSlide) => {
   track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide');
 }
 
+// update dot indicators
 const updateDots = (currentDot, targetDot) => {
   currentDot.classList.remove('current-slide');
   targetDot.classList.add('current-slide');
 }
 
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
-  if (targetIndex === 0) {
+  if (targetIndex === 0) { // when at the first slide, hide left arrow
     prevButton.classList.add('is-hidden');
     nextButton.classList.remove('is-hidden');
-  } else if (targetIndex === slides.length - 1) {
+  } else if (targetIndex === slides.length - 1) { // when at the last slide, hide right arrow
     prevButton.classList.remove('is-hidden');
     nextButton.classList.add('is-hidden');
-  } else {
+  } else {  // all slides in between
     prevButton.classList.remove('is-hidden');
     nextButton.classList.remove('is-hidden');
   }
 }
 
-// when I click right, move slides right
+// when the right button is clicked, move slides right
 nextButton.addEventListener('click', e => {
   let currentSlide = track.querySelector('.current-slide');
   let nextSlide = currentSlide.nextElementSibling;
@@ -50,7 +52,7 @@ nextButton.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
-// when I click left, move slides left
+// when the left button is clicked, move slides left
 prevButton.addEventListener('click', e => {
   let currentSlide = track.querySelector('.current-slide');
   let prevSlide = currentSlide.previousElementSibling;
@@ -63,7 +65,7 @@ prevButton.addEventListener('click', e => {
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
-//when i click the nav indicators, move to that slide
+//when the nav indicator dot is clicked, move to that slide
 dotsNav.addEventListener('click', e => {
   // which indicator was clicked on
   let targetDot = e.target.closest('button');

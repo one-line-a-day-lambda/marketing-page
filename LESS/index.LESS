@@ -4,6 +4,8 @@
 @import '../LESS/accordion.less';
 @import '../LESS/about.less';
 @import '../Questions.less';
+@import "../LESS/footer.less";
+@import "../LESS/mixins.less";
 
 html {
     font-size: 62.5%;
@@ -12,11 +14,20 @@ html {
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
-    background-color: white;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: @background-grey;
+}
+
+body {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 1400px;
+  width: 100%;
   background: @background-grey;
 }
+
+
+

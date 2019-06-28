@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>One Line a Day</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./favicon.ico">
         <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
@@ -9,7 +10,8 @@
         <script src="./JavaScript/header.js" async></script>
         <script src="./Javascript/accordion.js" async></script>
         <script src="./JavaScript/carousel.js" async></script>
-        <script src="https://kit.fontawesome.com/319299884b.js"></script>
+        <script src="https://kit.fontawesome.com/319299884b.js" async></script>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -26,101 +28,139 @@
             </div>
             <h1>One Line a Day</h1>
         </div>
+      </div>
 
-        <!-- TOP IMAGE AND TEXT -->
+        <!-- HEADER -->
         <header>
-            <div class = 'text'>
-                <h1>Some kind of motto</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                    officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <button>Get Started</button>
             <img class="background-img" src="./Images/typewriter.jpg" alt="Photo by Patrick Fore on Unsplash">
+            <div class = 'text'>
+                <h1>Write your story,<br>one line at a time</h1>
+                <p>What were you doing 10 years ago? What did you like? Who were you? One Line a Day helps you
+                  write your story. By providing an easy way to record what you remember about each day over a 10-year period, 
+                  One Line a Day can connect your present to your future and your future to your past.
+                </p>
+            </div>
+            <button><a href="https://onelineadayfrontend.netlify.com/">Get Started</a></button>
         </header>
 
-        <!-- Carousel section -->
+        <!-- MIDDLE CONTENT -->
        <div class="carousel-wrapper">
-           <div class="carousel-title">
-            <h2>Getting Started</h2>
-           </div>
-
-          
-          <div class="carousel">
-            <button class="carousel-button carousel-button--left is-hidden"><i class="fas fa-angle-left"></i></button>
-            <div class="carousel-track-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <div class="slide slide-1-content">Slide 1</div>
-                    </li>
-                    <li class="carousel-slide">
-                        <div class=" slide slide-2-content">Slide 2</div>
-                    </li>
-                    <li class="carousel-slide">
-                        <div class="slide slide-3-content">Slide 3</div>
-                    </li>
-                    <li class="carousel-slide">
-                        <div class="slide slide-3-content">Slide 4</div>
-                    </li>
-                </ul>
+           <!--Tutorial Section-->
+           <div class="tutorial-content"> 
+                <h2>Getting Started</h2>
+                <div class="tut-bubble">
+                    <h3>Step 1</h3>
+                    <p>You can get started by clicking on "Log In" at the top right if you are already a user.</p>
+                </div>
+                <div class="tut-bubble">
+                    <h3>Step 2</h3>
+                    <p>If you are a new user, please click on "Sign Up" at the top right.</p>
+                </div>
+                <div class="tut-bubble">
+                    <h3>Step 3</h3>
+                    <p>Next you will need to enter any required information to have your account set up. All we will ask for is a desired username and have you create a password.</p>
+                </div>
+                <div class="tut-bubble">
+                    <h3>Step 4</h3>
+                    <p>That's it! You are ready to starting logging journal entries.</p>
+                </div>
             </div>
-            <button class="carousel-button carousel-button--right"><i class="fas fa-angle-right"></i></button>
 
-            <div class="carousel-nav">
-                <button class="carousel-indicator current-slide"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-            </div>
+        <!-- CAROUSEL -->
+        <div class="carousel">
+          <button class="carousel-button carousel-button--left is-hidden"><i class="fas fa-angle-left"></i></button>
+          <div class="carousel-track-container">
+              <ul class="carousel-track">
+                  <li class="carousel-slide current-slide">
+                      <div class="slide slide-1-content">
+                          <img src="images/slide-1.jpg" alt="Photo by">
+                          <h3>Writing Tip #1: Write Every Day</h3>
+                          <p>Don’t write a lot. Just write often. Writing five hours on a Saturday isn’t nearly as valuable as writing 5 minutes a day every day of the week.</p>
+                      </div>
+                  </li>
+                  <li class="carousel-slide">
+                      <div class="slide slide-2-content">
+                          <img src="images/slide-2.jpg" alt="Photo by Mitchell Hollander on Unsplash">
+                          <h3>Writing Tip #2: Don’t Be Lazy</h3>
+                          <p>Let's be real here, it really is just one line a day. Whether it's right before bedtime or first thing when you wake up, find the time in your day.</p>
+                      </div>
+                  </li>
+                  <li class="carousel-slide">
+                      <div class="slide slide-3-content">
+                          <img src="images/slide-3.jpg" alt="Photo by Art Lasovsky on Unsplash">
+                          <h3>Writing Tip #3: Make Writing More Personal</h3>
+                          <p>"Protect the time and space in which you write. Keep everybody away from it, even the people who are most important to you." — Zadie Smith</p>
+                      </div>
+                  </li>
+                  <li class="carousel-slide">
+                      <div class="slide slide-3-content">
+                          <img src="images/slide-4.jpg" alt="Photo by Andrew Ridley on Unsplash">
+                          <h3>Writing Tip #4: Never Use Words You Don’t Know</h3>
+                          <p>Introduce new words into your vocabulary in moderation, and make sure you know how to use them properly. Your audience will thank you.</p>
+                      </div>
+                  </li>
+              </ul>
           </div>
-       </div>
+          <button class="carousel-button carousel-button--right"><i class="fas fa-angle-right"></i></button>
+          <div class="carousel-nav">
+              <button class="carousel-indicator current-slide"></button>
+              <button class="carousel-indicator"></button>
+              <button class="carousel-indicator"></button>
+              <button class="carousel-indicator"></button>
+          </div>
+        </div>
+      </div>
 
-       <div class="accordion-wrapper">
-        <h2>Frequently Asked Questions</h2>
+      <!-- FAQ SECTION -->
+      <div class="accordion-wrapper">
+        <h2>Benefits of Using One Line a Day</h2>
 
+        <!-- Accordion -->
         <div class="accordion">
           <div class="accordion-item">
-            <a>How can writing one line a day be impactful?</a><i class="fas fa-plus"></i>
+            <a>Boosting Memory and Comprehension</a><i class="acc-icon fas fa-plus"></i>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              <p>There's a unique relationship between the hand and brain, sparked by the composition of thoughts and ideas. Words are representations of ideas; the formation of letters and causes the mind to compose or re-compose ideas while journaling. This bolsters previously covered information and forces you to engage in cognitive recall.</p>
             </div>
           </div>
           <div class="accordion-item">
-            <a>Why is the sky blue?</a><i class="fas fa-plus"></i>
+            <a>Achieving Goals</a><i class="acc-icon fas fa-plus"></i>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              <p>Journaling often includes your dreams and ambitions, yet the idea that scribbled words can help achieve goals is understandably fanciful. But consider building a house without a blueprint. That makes more sense. Writing goals signals to your brain "this is important." Use One Line a Day to write down goals for each day!</p>
             </div>
           </div>
           <div class="accordion-item">
-            <a>Will we ever discover aliens?</a><i class="fas fa-plus"></i>
+            <a>Stretching Your IQ</a><i class="acc-icon fas fa-plus"></i>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              <p>Journaling is an exploration of language, you'll have the natural urge to search for new words and increase your vocabulary. The report goes on to say, "One of the best single measures of overall intelligence as measured by intelligence tests is vocabulary."</p>
             </div>
           </div>
           <div class="accordion-item">
-            <a>How much does the Earth weigh?</a><i class="fas fa-plus"></i>
+            <a>Emotional Intelligence</a><i class="acc-icon fas fa-plus"></i>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              <p>Emotional Intelligence is the ability to perceive and manage your emotions, and that of others. Using One Line A Day is an outlet for processing emotions and increases self-awareness. This internal familiarity becomes a bridge of empathy, you'll better intuit and understand what others are experiencing.</p>
             </div>
           </div>
           <div class="accordion-item">
-            <a>How do airplanes stay up?</a><i class="fas fa-plus"></i>
+            <a>Strengthen Your Self-Discipline</a><i class="acc-icon fas fa-plus"></i>
             <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+              <p>Setting time aside to write, whether morning or evening, is an act of discipline. And discipline begets discipline. Like a muscle, the more you exercise it, the stronger it becomes. And habits formed in one area of life have a tendency to spread; as keeping your office clean leads to keeping the bedroom tidy,your daily practice of writing will domino onto other healthy habits.</p>
             </div>
           </div>
         </div>
-       </div>
-      
-        <footer>
-            <p>Copyright 2019</p>
-        </footer>
-    </div>
-</container>
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+      </div>
+
+      <footer>
+        <!-- SOCIAL NAV -->
+        <div class="sovial-nav">
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+        <p>&copy; 2019 One Line A Day</p>
+
+      </footer>
 </body>
 
 

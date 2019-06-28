@@ -2,15 +2,17 @@
 
 .top-bar {
     width: 100%;
+    left: 0;
     height: 75px;
-    background-color: @primary-green;
+    background-image: linear-gradient(@light-green, @dark-green);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     .menu {
       position: absolute;
@@ -30,14 +32,24 @@
         align-items: center;  
         margin-top: 20px;
         border: 2.5px solid @light-green;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        @media @mobile {
+          width: 150px;
+        }
         .dropdown-link {
           width: 100%;
           text-align: center;
-          padding: 15px 0;
+          padding: 14px 0;
           font-size: 18px;
           text-decoration: none;
           font-family: Roboto;
           color: white;
+          transition: background-color .4s;
+
+          @media @mobile {
+            font-size: 1.2rem;
+          }
           &:hover {
             color: white;
             background-color: @dark-green;
@@ -50,35 +62,96 @@
     }
    }
     h1 {
-      margin: 0;
-      font-size: 4rem;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px #000000;
+
+      @media @mobile {
+        font-size: 30px;
+      }
     } 
+    .logins {
+      position: absolute;
+      display: flex;
+      right: 20px;
+      align-items: center;
+      
+      @media @mobile {
+        flex-direction: column;
+      }
+
+      @media (max-width: 690px) {
+        flex-direction: column;
+      }
+
+      .login-item {
+        display: flex;
+        align-items: center;
+        padding-left: 14px;
+        transition: transform 0.2s;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+          padding-left: 6px;
+
+          @media @mobile {
+            font-size: 12px;
+            padding-bottom: 4px;
+          }
+        }
+      }
+      .login-item:hover{
+        transform: scale(1.2);
+      }
+
+    }
+
   }
 
   header {
       position: relative;
+      width: 100%;
       .text {
+
       h1{
           position: absolute;
           z-index: 2;
-          margin: 0 10rem;
-          left: 0;
-          right: 0;
-          top: 37%;
-          width: 71%;
+          left: 24px;
+          top: 25%;
+          width: 50%;
           color: white;
-          font-size: 4rem;
+          font-size: 50px;
+
+          @media @mobile {
+            font-size: 18px;
+            left: 2rem;
+            width: 50%;
+            top: 27%;
+          }
       }
       p {
         position: absolute;
           z-index: 2;
-          margin: 2rem 10rem;
           left: 0;
           right: 0;
-          top: 45%;
+          top: 42%;
           width: 50%;
           color: white;
-          font-size: 1.6rem;
+          font-size: 14px;
+          margin: 20px 24px;
+
+          @media @mobile {
+            font-size: 1.2rem;
+            color: black;
+            width: 94.3%;
+            padding: 14px;
+            margin: 0;
+            position: relative;
+            background: white;
+            left: 0;
+            margin-top: 20px;
+          }
       }
     }
 
@@ -90,14 +163,44 @@
       top: 85%;
       width: 30%;
       color: white;
-      font-size: 1.6rem;
-      padding: 15px;
+      text-shadow: 2px 2px 4px #000000;
+      padding: 14px;
       border-radius: 5px;
-      background-color: @primary-green;
+      background-image: linear-gradient(@light-green, @dark-green);
+      // background-color: @primary-green;
       border: none;
-      font-family: Roboto;
-      font-weight: 700;
       transition: all .2s;
+      outline: none;
+
+      @media @mobile {
+        background-image: linear-gradient(#3333FF, @accent-blue);
+        // background-color: @accent-blue;
+        width: 50%;
+        left: 25%;
+        position: relative;
+        margin: 2rem 0;
+      }
+
+      @media @tablet {
+        background-image: linear-gradient(#3333FF, @accent-blue);
+        // background-color: @accent-blue;
+        width: 50%;
+        left: 25%;
+        position: relative;
+        margin: 20px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+
+        @media @mobile {
+          font-size: 18px;
+        }
+      }
+
 
       &:hover {
         transform: scale(1.05);
@@ -105,7 +208,7 @@
     }
 
       img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         opacity: 0.8;
     }

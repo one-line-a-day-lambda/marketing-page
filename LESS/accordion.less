@@ -1,8 +1,9 @@
 .accordion-wrapper{
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   background-image: linear-gradient(270deg, #ffffff 0%, #e6ffe3 100%);
-  margin-top: -20px;
+  padding: 50px 0;
+  background: white;
 
   h2 {
     font-size: 2rem;
@@ -12,83 +13,152 @@
     margin: auto;
     padding-top: 30px;
     padding-bottom: 10px;
+
+    @media (max-width: 700px) {
+      width: 55%;
+      border: 1px solid lightgrey;
+      padding: 10px;
+      margin-top: 50px;
+    }
+    @media @mobile {
+      width: 70%;
+    }
   }
 
   .accordion {
     width: 700px;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px auto;
+
+    @media @tablet {
+      width: 600px;
+    }
+    @media (max-width: 700px) {
+      width: 500px;
+    }
+    @media @mobile {
+      width: 100%;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .accordion-item {
+      width: 700px;
+
+      @media @tablet {
+        width: 600px;
+      }
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+
+      a.active {
+        background: @light-green;
+        color: white;
+      }
+    }
   }
 
   .accordion a {
     position: relative;
     display: flex;
+    margin: 5px 0;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     flex-direction: column;
-    width: 100%;
-    padding: 1rem 3rem 1rem 1rem;
-    color: #92e492;
-    font-size: 1.7rem;
-    font-weight: 400;
-    border-bottom: 1px solid #2ea00b;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.8rem;
+    transition: all .2s;
+    background: @background-grey;
+    border-radius: 3px;
 
+    @media @tablet {
+      width: 98%;
+    }
+    @media @mobile {
+      width: 98%;
+      text-align: center;
+      margin: 0;
+      border-bottom: 1px solid lightgrey;
+    }
     &:hover, &::after {
       cursor: pointer;
-      color: #6ad46a;
-    }
-    &:hover::after {
-      border: 1px solid #0ac729;
+      color: black;
+      background: rgb(232, 243, 228);
     }
   } // .accordion a
-  .fa-plus {
-    position: absolute;
-    float: right;
-    right: 1rem;
-    position: absolute;
-    font-size: 1rem;
-    color: #58d33f;
+
+  i { // plus/minus icons
+    cursor: pointer;
+    position: relative;
+    right: -675px;
+    top: -40px;
+    font-size: 1.4rem;
+    color: @light-green;
     padding: 6px;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    border: 1px solid #7da272;
     text-align: center;
+
+    @media @tablet {
+      right: -565px;
+    }
+    @media (max-width: 700px) {
+      right: -465px;
+    }
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  i.fa-minus {
+    color: white;
   }
 
   .content {
     opacity: 0;
     padding: 0 1rem;
     max-height: 0;
-    border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
     clear: both;
-    -webkit-transition: all 0.2s ease 0.15s;
-    -o-transition: all 0.2s ease 0.15s;
-    transition: all 0.2s ease 0.15s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-top: -30px;
 
       p {
         font-size: 1.3rem;
         font-weight: 300;
+        margin: 0;
+      }
+      @media @mobile {
+        margin: 0;
       }
   }
   .active { //active content
     opacity: 1;
     padding: 1rem;
     max-height: 100%;
+    width: 90%;
     -webkit-transition: all 0.35s ease 0.15s;
     -o-transition: all 0.35s ease 0.15s;
     transition: all 0.35s ease 0.2s;
-  }
+    box-shadow: 1px 2px 3px 1px lightgrey;
+    margin: 20px auto;
+    margin-top: -20px;
+    border-radius: 3px;
 
-  .active {
-    color: #03d20d;
-    border-bottom: 1px solid #0ad203;
+    @media @mobile {
+      margin: 10px auto;
+    }
 
     &::after {
       color: #03d21f;
       border: 1px solid #03d214;
     }
   }
-}
+  @media @mobile {
+    min-height: 300px;
+  }
+} //accordion-wrapper
